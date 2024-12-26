@@ -1,0 +1,62 @@
+{
+  "private": true,
+  "name": "react-shop-repo",
+  "version": "0.0.0",
+  "author": "Vasyl Pukii",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "lerna run build",
+    "build-demo": "cd examples/bookshelf && pnpm run build",
+    "prettier": "prettier --write \"packages/*/src/**/*.{js,jsx,ts,tsx}\" \"examples/*/src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint \"packages/**/src/**/*.{js,ts,tsx}\" \"examples/*/src/**/*.{js,ts,tsx}\"",
+    "lint:staged": "lint-staged",
+    "prepare": "husky install",
+    "docs": "cd documentation && pnpm start --port 4200",
+    "test": "vitest --run",
+    "test:coverage": "vitest run --coverage",
+    "graph": "npx nx graph",
+    "registry:start": "nx local-registry",
+    "version:up": "lerna version --conventional-comits --yes",
+    "version-packages": "pnpm version changeset"
+  },
+  "packageManager": "pnpm@9.12.3",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.11",
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@esbuild-plugins/node-resolve": "^0.2.2",
+    "@eslint/compat": "^1.1.0",
+    "@netlify/plugin-nextjs": "^5.8.1",
+    "@types/jest": "^29.5.14",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^9.5.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "globals": "^15.6.0",
+    "husky": "^8.0.3",
+    "lerna": "^8.1.3",
+    "lint-staged": "^13.3.0",
+    "prettier": "^3.3.2",
+    "raf": "^3.4.1",
+    "typescript": "^5.4.5",
+    "verdaccio": "^5.31.1",
+    "vitest": "^2.1.8"
+  },
+  "changeLog": {
+    "repo": "react-shop-dev/react-shop"
+  },
+  "dependencies": {
+    "@nx/js": "^19.3.0",
+    "@testing-library/jest-dom": "^6.6.3"
+  },
+  "nx": {
+    "includedScripts": []
+  }
+}

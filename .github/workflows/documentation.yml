@@ -1,0 +1,48 @@
+name: Documentation
+on:
+  pull_request:
+    paths:
+      - 'documentation/**'
+
+jobs:
+  deploy-docs:
+    name: Documentation deploy
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-docs-${{ github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2.4.1
+        with:
+          version: 8
+      - name: USE Node.js LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile=false
+      - name: Install dependencies (Docs)
+        run: |
+          cd documentation
+          pnpm install
+      - name: Build documentation
+        if: github.ref != 'refs/heads/main'
+        run: |
+          cd documentation
+          pnpm build
+      # - name: Deploy to Netlify
+      #   uses: nwtgck/actions-netlify@v3.0
+      #   if: github.ref != 'refs/heads/main'
+      #   with:
+      #     publish-dir: './documentation/build'
+      #     deploy-message: 'Deploy from Github Actions'
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     enable-pull-request-comment: false
+      #     overwrites-pull-request-comment: false
+      #   env:
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      #   timeout_minutes: 10

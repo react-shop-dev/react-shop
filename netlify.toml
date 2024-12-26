@@ -1,0 +1,5 @@
+[build]
+  environment = { NEXT_PUBLIC_BASE_PATH = "" }
+  ignore = "exit 0"
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
