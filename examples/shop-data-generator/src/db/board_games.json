@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Mystery Mansion",
+    "thumbnail": "mystery_mansion",
+    "imagesCount": 1,
+    "brand": "BoardMaster",
+    "description": "Uncover secrets in a haunted mansion with this thrilling strategy game."
+  },
+  {
+    "title": "Samurai Showdown",
+    "thumbnail": "samurai_showdown",
+    "imagesCount": 1,
+    "brand": "NipponGames",
+    "description": "Master the art of the sword in this tactical samurai board game."
+  },
+  {
+    "title": "Galaxy Conquest",
+    "thumbnail": "galaxy_conquest",
+    "imagesCount": 1,
+    "brand": "StarGames",
+    "description": "A space exploration game where players compete to dominate the galaxy."
+  },
+  {
+    "title": "Wild West Showdown",
+    "thumbnail": "wild_west_showdown",
+    "imagesCount": 1,
+    "brand": "FrontierGames",
+    "description": "Outwit your opponents in a classic Wild West standoff."
+  },
+  {
+    "title": "Kingdoms of Valeria",
+    "thumbnail": "kingdoms_of_valeria",
+    "imagesCount": 1,
+    "brand": "EpicGames",
+    "description": "Build your kingdom and defend it from invaders in this epic strategy game."
+  },
+  {
+    "title": "Pirate's Cove",
+    "thumbnail": "pirates_cove",
+    "imagesCount": 1,
+    "brand": "SeaVentures",
+    "description": "Sail the seas, hunt for treasure, and outwit rival pirates in this swashbuckling game."
+  },
+  {
+    "title": "Zombie Apocalypse",
+    "thumbnail": "zombie_apocalypse",
+    "brand": "HorrorGames",
+    "description": "Survive the zombie apocalypse and outlast other players in this intense survival game."
+  },
+  {
+    "title": "City Tycoon",
+    "thumbnail": "city_tycoon",
+    "imagesCount": 1,
+    "brand": "EconomyGames",
+    "description": "Build your city, manage resources, and compete with other tycoons to become the ultimate city planner."
+  },
+  {
+    "title": "Medieval Warfare",
+    "thumbnail": "medieval_warfare",
+    "imagesCount": 1,
+    "brand": "HistoryGames",
+    "description": "Command armies and conquer territories in this detailed medieval war game."
+  },
+  {
+    "title": "Space Traders",
+    "thumbnail": "space_traders",
+    "imagesCount": 2,
+    "brand": "GalaxyGames",
+    "description": "Trade goods across the galaxy and build your trading empire in this economic strategy game."
+  },
+  {
+    "title": "Cthulhu Mythos",
+    "thumbnail": "cthulhu_mythos",
+    "imagesCount": 1,
+    "brand": "MythosGames",
+    "description": "Delve into the world of Lovecraftian horror with this atmospheric board game."
+  }
+]

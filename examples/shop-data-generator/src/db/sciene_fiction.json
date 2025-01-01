@@ -1,0 +1,79 @@
+[
+  {
+    "title": "The Galactic Chronicles: Beyond the Stars",
+    "thumbnail": "galactic_chronicles",
+    "imagesCount": 1,
+    "author": "Samantha Starlight",
+    "description": "Embark on an epic journey beyond the stars in this thrilling space odyssey."
+  },
+  {
+    "title": "Android Uprising: Rebellion of the Machines",
+    "thumbnail": "android_uprising",
+    "imagesCount": 1,
+    "author": "Cybernetic Author",
+    "description": "Witness the uprising of artificial intelligence in this futuristic tale of rebellion."
+  },
+  {
+    "title": "Temporal Paradox: A Time Traveler's Dilemma",
+    "thumbnail": "temporal_paradox",
+    "imagesCount": 1,
+    "author": "Chrononaut Explorer",
+    "description": "Explore the complexities of time travel in this mind-bending science fiction adventure."
+  },
+  {
+    "title": "Cyberpunk City: Neon Dreams and Virtual Realities",
+    "thumbnail": "cyberpunk_city",
+    "imagesCount": 3,
+    "author": "Virtual Visionary",
+    "description": "Immerse yourself in the neon-lit streets of a cyberpunk city with this futuristic sci-fi novel."
+  },
+  {
+    "title": "Alien Encounter: First Contact Chronicles",
+    "thumbnail": "alien_encounter",
+    "imagesCount": 1,
+    "author": "Xeno Explorer",
+    "description": "Experience the thrilling account of humanity's first encounter with extraterrestrial life."
+  },
+  {
+    "title": "The Quantum Nexus: Parallel Realities",
+    "thumbnail": "quantum_nexus",
+    "imagesCount": 2,
+    "author": "Quantum Theorist",
+    "description": "Dive into the mysterious world of parallel realities in this mind-bending quantum adventure."
+  },
+  {
+    "title": "Stellar Conquest: Intergalactic Wars",
+    "thumbnail": "stellar_conquest",
+    "imagesCount": 2,
+    "author": "Galactic General",
+    "description": "Join the intergalactic wars and witness epic battles in the vastness of space."
+  },
+  {
+    "title": "Cyborg Utopia: Machines and Sentient Harmony",
+    "thumbnail": "cyborg_utopia",
+    "imagesCount": 2,
+    "author": "AI Philosopher",
+    "description": "Explore a future where machines and sentient beings coexist in perfect harmony."
+  },
+  {
+    "title": "Solaris Awakening: A Space Odyssey",
+    "thumbnail": "solaris_awakening",
+    "imagesCount": 3,
+    "author": "Stellar Explorer",
+    "description": "Embark on an awe-inspiring space odyssey with mysterious discoveries and cosmic revelations."
+  },
+  {
+    "title": "Neural Network Revolution: Rise of Conscious Machines",
+    "thumbnail": "neural_network_revolution",
+    "imagesCount": 1,
+    "author": "Tech Visionary",
+    "description": "Explore the futuristic world where conscious machines challenge the boundaries of existence."
+  },
+  {
+    "title": "Beyond the Event Horizon: A Black Hole Odyssey",
+    "thumbnail": "event_horizon",
+    "imagesCount": 2,
+    "author": "Astrophysics Explorer",
+    "description": "Journey into the unknown as you explore the mysteries of black holes in this thrilling odyssey."
+  }
+]

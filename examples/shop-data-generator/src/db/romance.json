@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Love in the City: A Romantic Escape",
+    "thumbnail": "love_in_the_city",
+    "imagesCount": 1,
+    "author": "Romance Author",
+    "description": "Experience the magic of love in the bustling cityscape with this heartwarming romantic tale."
+  },
+  {
+    "title": "Eternal Love: A Timeless Romance",
+    "thumbnail": "eternal_love",
+    "imagesCount": 1,
+    "author": "Time Traveler of Hearts",
+    "description": "Dive into a timeless romance that transcends the boundaries of time and space."
+  },
+  {
+    "title": "The Wedding Planner's Dilemma",
+    "thumbnail": "wedding_planners_dilemma",
+    "imagesCount": 1,
+    "author": "Eventful Romance Author",
+    "description": "Join the journey of a wedding planner navigating love, chaos, and unexpected twists."
+  },
+  {
+    "title": "Summer Love: Beachside Bliss",
+    "thumbnail": "summer_love",
+    "imagesCount": 1,
+    "author": "Beach Romance Enthusiast",
+    "description": "Feel the warmth of summer love with this enchanting romance set against a beachside backdrop."
+  },
+  {
+    "title": "Hearts Entwined: A Love Story",
+    "thumbnail": "hearts_entwined",
+    "imagesCount": 1,
+    "author": "Passionate Romance Writer",
+    "description": "Discover a captivating love story where hearts entwine against all odds."
+  },
+  {
+    "title": "A Love Beyond Words",
+    "thumbnail": "love_beyond_words",
+    "imagesCount": 1,
+    "author": "Wordsmith of Romance",
+    "description": "Experience a love so profound that it goes beyond words in this emotionally charged romance."
+  },
+  {
+    "title": "Moonlit Serenade: Celestial Romance",
+    "thumbnail": "moonlit_serenade",
+    "imagesCount": 1,
+    "author": "Stargazer Romance Novelist",
+    "description": "Savor the magic of a celestial romance under the moonlit sky with this enchanting love story."
+  },
+  {
+    "title": "The Art of Falling: A Dance of Hearts",
+    "thumbnail": "art_of_falling",
+    "imagesCount": 1,
+    "author": "Dance of Hearts Author",
+    "description": "Indulge in the beauty of love and dance in this heartwarming tale of passion and connection."
+  },
+  {
+    "title": "Secrets of the Heart: A Forbidden Affair",
+    "thumbnail": "secrets_of_the_heart",
+    "imagesCount": 1,
+    "author": "Mystery Romance Maven",
+    "description": "Unravel the secrets of the heart in this forbidden affair that ignites passion and suspense."
+  },
+  {
+    "title": "Café Amour: Brewing Love Over Coffee",
+    "thumbnail": "cafe_amour",
+    "imagesCount": 2,
+    "author": "Barista Romance Novelist",
+    "description": "Sip on the intoxicating blend of love and coffee in this heartwarming romance set in a charming café."
+  }
+]

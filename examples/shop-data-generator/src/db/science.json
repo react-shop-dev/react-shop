@@ -1,0 +1,51 @@
+[
+  {
+    "title": "The Cosmos Unveiled",
+    "thumbnail": "cosmos_unveiled",
+    "imagesCount": 1,
+    "author": "Astronomy Expert",
+    "description": "Embark on a journey through the cosmos and unravel the mysteries of the universe."
+  },
+  {
+    "title": "The Quantum Reality",
+    "thumbnail": "quantum_reality",
+    "imagesCount": 2,
+    "author": "Quantum Physicist",
+    "description": "Explore the mind-bending concepts of quantum physics and its impact on our understanding of reality."
+  },
+  {
+    "title": "Genetic Revolution",
+    "thumbnail": "genetic_revolution",
+    "imagesCount": 1,
+    "author": "Genetics Pioneer",
+    "description": "Delve into the groundbreaking advancements in genetics that are shaping the future of medicine."
+  },
+  {
+    "title": "Beyond Earth: The Future of Space Exploration",
+    "thumbnail": "beyond_earth",
+    "imagesCount": 2,
+    "author": "Space Explorer",
+    "description": "Explore the future possibilities of space exploration and humanity's journey beyond Earth."
+  },
+  {
+    "title": "The Microscopic World",
+    "thumbnail": "microscopic_world",
+    "imagesCount": 1,
+    "author": "Microbiology Expert",
+    "description": "Journey into the fascinating world of microscopic organisms and their vital role in our lives."
+  },
+  {
+    "title": "Climate Change Chronicles",
+    "thumbnail": "climate_change_chronicles",
+    "imagesCount": 1,
+    "author": "Environmental Scientist",
+    "description": "Gain insights into the impact of climate change and explore solutions for a sustainable future."
+  },
+  {
+    "title": "Neuroscience Wonders",
+    "thumbnail": "neuroscience_wonders",
+    "imagesCount": 1,
+    "author": "Neuroscientist Extraordinaire",
+    "description": "Explore the wonders of the human brain and the latest discoveries in neuroscience."
+  }
+]

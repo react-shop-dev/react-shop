@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "rootDir": "./src",
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types"]
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "title": "The Haunting of Hill House",
+    "thumbnail": "haunting_of_hill_house",
+    "imagesCount": 1,
+    "author": "Shirley Jackson",
+    "description": "Experience the chilling and mysterious events at the haunted Hill House."
+  },
+  {
+    "title": "IT",
+    "thumbnail": "it",
+    "imagesCount": 1,
+    "author": "Stephen King",
+    "description": "Encounter the terror of Pennywise the Dancing Clown in the small town of Derry."
+  },
+  {
+    "title": "Bird Box",
+    "thumbnail": "bird_box",
+    "imagesCount": 2,
+    "author": "Josh Malerman",
+    "description": "Survive the unknown horrors that drive people to madness when seen."
+  },
+  {
+    "title": "The Shining",
+    "thumbnail": "the_shining",
+    "imagesCount": 1,
+    "author": "Stephen King",
+    "description": "Witness the supernatural events at the haunted Overlook Hotel."
+  },
+  {
+    "title": "Psycho",
+    "thumbnail": "psycho",
+    "author": "Robert Bloch",
+    "description": "Delve into the mind of the disturbed Norman Bates in this psychological horror classic."
+  },
+  {
+    "title": "House of Leaves",
+    "thumbnail": "house_of_leaves",
+    "imagesCount": 1,
+    "author": "Mark Z. Danielewski",
+    "description": "Experience the unsettling journey through a labyrinthine house that defies the laws of physics."
+  },
+  {
+    "title": "Dracula",
+    "thumbnail": "dracula",
+    "imagesCount": 2,
+    "author": "Bram Stoker",
+    "description": "Enter the world of the iconic vampire Count Dracula in this Gothic horror classic."
+  },
+  {
+    "title": "Coraline",
+    "thumbnail": "coraline",
+    "imagesCount": 2,
+    "author": "Neil Gaiman",
+    "description": "Embark on a dark and fantastical journey with Coraline into the mysterious Other World."
+  },
+  {
+    "title": "American Psycho",
+    "thumbnail": "american_psycho",
+    "imagesCount": 2,
+    "author": "Bret Easton Ellis",
+    "description": "Explore the disturbing and graphic world of Patrick Bateman in this psychological horror novel."
+  }
+]

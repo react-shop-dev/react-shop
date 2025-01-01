@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Classic Leather",
+    "brand": "LeatherMark",
+    "material": "Leather",
+    "description": "A luxurious leather bookmark with an engraved design.",
+    "thumbnail": "classic_leather"
+  },
+  {
+    "title": "Eco Leaf",
+    "brand": "GreenReads",
+    "material": "Recycled Paper",
+    "description": "An eco-friendly bookmark made from 100% recycled paper.",
+    "thumbnail": "eco_leaf"
+  },
+  {
+    "title": "Vintage Charm",
+    "brand": "RetroMarks",
+    "material": "Paper",
+    "description": "A vintage-style bookmark with an intricate pattern",
+    "thumbnail": "vintage_charm"
+  },
+  {
+    "title": "Modern Minimal",
+    "brand": "SimpleLine",
+    "material": "Paper",
+    "description": "A minimalist bookmark with a smooth finish.",
+    "thumbnail": "modern_minimal"
+  }
+]

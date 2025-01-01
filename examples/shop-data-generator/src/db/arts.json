@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Masterpieces of the Renaissance",
+    "thumbnail": "renaissance_masterpieces",
+    "imagesCount": 2,
+    "author": "Art Historian",
+    "description": "Discover the timeless beauty of Renaissance art through its masterpieces."
+  },
+  {
+    "title": "Modern Abstract Expressionism",
+    "thumbnail": "abstract_expressionism",
+    "imagesCount": 2,
+    "author": "Abstract Artist",
+    "description": "Dive into the world of abstract expressionism and explore its diverse forms of artistic expression."
+  },
+  {
+    "title": "The History of Photography",
+    "thumbnail": "history_of_photography",
+    "imagesCount": 3,
+    "author": "Photography Enthusiast",
+    "description": "Trace the evolution of photography from its early days to the digital age."
+  },
+  {
+    "title": "Impressionist Masterpieces",
+    "thumbnail": "impressionist_masterpieces",
+    "imagesCount": 3,
+    "author": "Impressionism Connoisseur",
+    "description": "Immerse yourself in the beauty and innovation of impressionist art with these masterpieces."
+  },
+  {
+    "title": "Sculptures Through the Ages",
+    "thumbnail": "sculptures_through_the_ages",
+    "imagesCount": 3,
+    "author": "Sculpture Aficionado",
+    "description": "Explore the evolution of sculpture art across different eras and cultures."
+  }
+]

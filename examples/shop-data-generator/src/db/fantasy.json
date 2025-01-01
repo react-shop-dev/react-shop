@@ -1,0 +1,58 @@
+[
+  {
+    "title": "The Enchanted Kingdom",
+    "thumbnail": "enchanted_kingdom",
+    "imagesCount": 2,
+    "author": "Fiona Fantasy",
+    "description": "Embark on a magical journey through an enchanted kingdom filled with mythical creatures."
+  },
+  {
+    "title": "Realm of Dragons",
+    "thumbnail": "realm_of_dragons",
+    "imagesCount": 2,
+    "author": "Drake Dragonheart",
+    "description": "Explore the mystical realm of dragons and witness epic battles between good and evil."
+  },
+  {
+    "title": "The Sorcerer's Apprentice",
+    "thumbnail": "sorcerers_apprentice",
+    "imagesCount": 1,
+    "author": "Merlin Magician",
+    "description": "Join the journey of a young apprentice discovering the secrets of sorcery."
+  },
+  {
+    "title": "Epic Quests and Legends",
+    "thumbnail": "epic_quests_and_legends",
+    "imagesCount": 1,
+    "author": "Eldron Epic",
+    "description": "Embark on epic quests and hear legends of heroes and mythical beings."
+  },
+  {
+    "title": "Whispers of the Elven Forest",
+    "thumbnail": "elven_forest",
+    "imagesCount": 2,
+    "author": "Lorien Elfkin",
+    "description": "Discover the enchanting whispers and secrets hidden within the mystical Elven Forest."
+  },
+  {
+    "title": "The Cursed Kingdom",
+    "thumbnail": "cursed_kingdom",
+    "imagesCount": 2,
+    "author": "Cassandra Cursebreaker",
+    "description": "Unravel the mysteries of a cursed kingdom and its quest for redemption."
+  },
+  {
+    "title": "Magical Realms of Light and Shadow",
+    "thumbnail": "magical_realms",
+    "imagesCount": 2,
+    "author": "Aria Mystique",
+    "description": "Journey through magical realms where light and shadow weave tales of wonder and mystery."
+  },
+  {
+    "title": "Legends of the Lost City",
+    "thumbnail": "lost_city_legends",
+    "imagesCount": 1,
+    "author": "Darius Dreamweaver",
+    "description": "Unearth the legends and mysteries of a lost city hidden in the heart of a magical realm."
+  }
+]

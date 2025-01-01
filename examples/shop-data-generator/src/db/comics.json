@@ -1,0 +1,44 @@
+[
+  {
+    "title": "The Infinite Loop",
+    "author": "Daniel Wong",
+    "thumbnail": "infinite_loop",
+    "imagesCount": 2,
+    "description": "Time travel, mystery, and betrayal collide as a group of scientists find themselves trapped in an endless loop of repeating events."
+  },
+  {
+    "title": "Silent Shadows",
+    "author": "Emily Grant",
+    "thumbnail": "silent_shadows",
+    "imagesCount": 1,
+    "description": "A master thief with a haunted past navigates a world of crime and intrigue, seeking redemption while evading deadly assassins."
+  },
+  {
+    "title": "The Silver Mask",
+    "author": "Jasmine Lee",
+    "thumbnail": "the_silver_mask",
+    "imagesCount": 1,
+    "description": "A mysterious vigilante known as 'The Silver Mask' fights to protect the city from corruption, while hiding secrets of their own."
+  },
+  {
+    "title": "The Last Outpost",
+    "author": "Daniel Frost",
+    "thumbnail": "the_last_outpost",
+    "imagesCount": 2,
+    "description": "As humanity’s last outpost on a distant planet faces an alien invasion, a small group of soldiers must defend the colony against overwhelming odds."
+  },
+  {
+    "title": "Heroes of Tomorrow",
+    "author": "Noah Vance",
+    "thumbnail": "heroes_of_tomorrow",
+    "imagesCount": 1,
+    "description": "A team of young superheroes fights to save the world while dealing with the challenges of growing up in the spotlight."
+  },
+  {
+    "title": "Starborn Legends",
+    "author": "Incognito",
+    "thumbnail": "starborn_legends",
+    "imagesCount": 1,
+    "description": ""
+  }
+]

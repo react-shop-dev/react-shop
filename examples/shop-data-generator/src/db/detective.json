@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Murder on the Orient Express",
+    "thumbnail": "murder_on_the_orient_express",
+    "imagesCount": 1,
+    "author": "Agatha Christie",
+    "description": "Join Hercule Poirot in solving a mysterious murder case aboard the luxurious Orient Express."
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "thumbnail": "girl_with_the_dragon_tattoo",
+    "imagesCount": 1,
+    "author": "Stieg Larsson",
+    "description": "Embark on a thrilling investigation with journalist Mikael Blomkvist and hacker Lisbeth Salander."
+  },
+  {
+    "title": "Sherlock Holmes: The Hound of the Baskervilles",
+    "thumbnail": "hound_of_the_baskervilles",
+    "imagesCount": 1,
+    "author": "Arthur Conan Doyle",
+    "description": "Solve the mystery of the legendary hound with the brilliant detective Sherlock Holmes and Dr. Watson."
+  },
+  {
+    "title": "Gone Girl",
+    "thumbnail": "gone_girl",
+    "imagesCount": 1,
+    "author": "Gillian Flynn",
+    "description": "Dive into the twisted and suspenseful story of a woman's disappearance and the secrets that unravel."
+  },
+  {
+    "title": "In the Woods",
+    "thumbnail": "in_the_woods",
+    "imagesCount": 1,
+    "author": "Tana French",
+    "description": "Uncover the mysteries of a detective's past and a chilling murder case in a small Irish town."
+  },
+  {
+    "title": "The Da Vinci Code",
+    "thumbnail": "da_vinci_code",
+    "imagesCount": 1,
+    "author": "Dan Brown",
+    "description": "Embark on a thrilling quest for hidden secrets and cryptic codes in this international detective novel."
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Becoming Myself: The Michelle Obama Story",
+    "thumbnail": "becoming_myself",
+    "imagesCount": 1,
+    "author": "Michelle Obama",
+    "description": "Explore the life and journey of the former First Lady, Michelle Obama, in her own words."
+  },
+  {
+    "title": "Steve Jobs: The Man Behind Apple",
+    "thumbnail": "steve_jobs",
+    "imagesCount": 2,
+    "author": "Walter Isaacson",
+    "description": "A comprehensive biography of the visionary co-founder of Apple, Steve Jobs."
+  },
+  {
+    "title": "The Diary of Anne Frank",
+    "thumbnail": "anne_frank_diary",
+    "imagesCount": 2,
+    "author": "Anne Frank",
+    "description": "Read the poignant and powerful diary of Anne Frank, a Jewish girl hiding from the Nazis during World War II."
+  },
+  {
+    "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+    "thumbnail": "elon_musk",
+    "imagesCount": 1,
+    "author": "Ashlee Vance",
+    "description": "Learn about the extraordinary life and ambitions of entrepreneur Elon Musk."
+  },
+  {
+    "title": "Malala: My Story of Standing Up for Girls' Rights",
+    "thumbnail": "malala",
+    "imagesCount": 3,
+    "author": "Malala Yousafzai",
+    "description": "Follow the inspiring journey of Malala Yousafzai, the youngest-ever Nobel Prize laureate."
+  },
+  {
+    "title": "Leonardo da Vinci: The Renaissance Man",
+    "thumbnail": "leonardo_da_vinci",
+    "imagesCount": 1,
+    "author": "Walter Isaacson",
+    "description": "Explore the life and genius of the legendary Renaissance artist and inventor, Leonardo da Vinci."
+  },
+  {
+    "title": "Hidden Figures: The Untold Story of the Black Women Mathematicians Who Helped Win the Space Race",
+    "thumbnail": "hidden_figures",
+    "imagesCount": 1,
+    "author": "Margot Lee Shetterly",
+    "description": "Discover the incredible true story of the black women mathematicians who played crucial roles in NASA during the Space Race."
+  },
+  {
+    "title": "Nelson Mandela: Long Walk to Freedom",
+    "thumbnail": "nelson_mandela",
+    "imagesCount": 1,
+    "author": "Nelson Mandela",
+    "description": "Read the inspiring autobiography of Nelson Mandela, the iconic anti-apartheid revolutionary."
+  },
+  {
+    "title": "Marie Curie: A Life of Discovery",
+    "thumbnail": "marie_curie",
+    "imagesCount": 1,
+    "author": "Françoise Giroud",
+    "description": "Discover the life and groundbreaking achievements of Nobel Prize-winning scientist Marie Curie."
+  },
+  {
+    "title": "Walt Disney: The Man Behind the Magic",
+    "thumbnail": "walt_disney",
+    "imagesCount": 3,
+    "author": "Bob Thomas",
+    "description": "Explore the life and legacy of the legendary animator and entrepreneur, Walt Disney."
+  },
+  {
+    "title": "Rosa Parks: The Mother of the Civil Rights Movement",
+    "thumbnail": "rosa_parks",
+    "imagesCount": 1,
+    "author": "Douglas Brinkley",
+    "description": "Learn about the courage and impact of Rosa Parks, a pivotal figure in the Civil Rights Movement."
+  }
+]

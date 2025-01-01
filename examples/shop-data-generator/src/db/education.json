@@ -1,0 +1,37 @@
+[
+  {
+    "title": "The Art of Learning: Strategies for Lifelong Success",
+    "thumbnail": "art_of_learning",
+    "imagesCount": 1,
+    "author": "Educational Guru",
+    "description": "Unlock the secrets to lifelong success with effective learning strategies and techniques."
+  },
+  {
+    "title": "Mindful Studying: Techniques for Focus and Retention",
+    "thumbnail": "mindful_studying",
+    "imagesCount": 1,
+    "author": "Study Strategist",
+    "description": "Enhance your study habits with mindfulness techniques for better focus and information retention."
+  },
+  {
+    "title": "The Science of Memory: Understanding and Improving Recall",
+    "thumbnail": "science_of_memory",
+    "imagesCount": 1,
+    "author": "Memory Scientist",
+    "description": "Delve into the science of memory and discover techniques to enhance your recall abilities."
+  },
+  {
+    "title": "Effective Teaching Strategies: A Practical Guide for Educators",
+    "thumbnail": "teaching_strategies",
+    "imagesCount": 1,
+    "author": "Educational Consultant",
+    "description": "Equip yourself with practical teaching strategies for a more effective and engaging classroom experience."
+  },
+  {
+    "title": "Digital Literacy: Navigating the Information Age",
+    "thumbnail": "digital_literacy",
+    "imagesCount": 1,
+    "author": "Tech Educator",
+    "description": "Navigate the complexities of the information age with this comprehensive guide to digital literacy."
+  }
+]

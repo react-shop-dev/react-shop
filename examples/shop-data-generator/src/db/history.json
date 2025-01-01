@@ -1,0 +1,71 @@
+[
+  {
+    "title": "The History of Time",
+    "thumbnail": "time_history",
+    "imagesCount": 1,
+    "author": "John A. Historian",
+    "description": "Explore the intriguing history of time and its impact on human civilization."
+  },
+  {
+    "title": "Empires of the Past",
+    "thumbnail": "empires_of_the_past",
+    "imagesCount": 1,
+    "author": "Jane Historian",
+    "description": "Journey through the rise and fall of the greatest empires in history."
+  },
+  {
+    "title": "Ancient Civilizations",
+    "thumbnail": "ancient_civilizations",
+    "imagesCount": 1,
+    "author": "David Archaeologist",
+    "description": "Discover the wonders of ancient civilizations and their lasting impact on the world."
+  },
+  {
+    "title": "The World Wars",
+    "thumbnail": "world_wars",
+    "imagesCount": 1,
+    "author": "Alex War Historian",
+    "description": "A comprehensive account of the world wars and their profound impact on global history."
+  },
+  {
+    "title": "Renaissance Revisited",
+    "thumbnail": "renaissance_revisited",
+    "imagesCount": 1,
+    "description": "Uncover the beauty and innovation of the Renaissance era in this captivating book."
+  },
+  {
+    "title": "The Great Explorers",
+    "thumbnail": "great_explorers",
+    "imagesCount": 1,
+    "author": "Eleanor Explorer",
+    "description": "Embark on a thrilling journey with the great explorers who shaped the course of history."
+  },
+  {
+    "title": "Revolutionary Ideas",
+    "thumbnail": "revolutionary_ideas",
+    "imagesCount": 1,
+    "author": "Thomas Revolutionary",
+    "description": "Explore the revolutionary ideas that changed the course of human history."
+  },
+  {
+    "title": "Medieval Mysteries",
+    "thumbnail": "medieval_mysteries",
+    "imagesCount": 2,
+    "author": "Megan Medievalist",
+    "description": "Delve into the mysteries of the medieval world and uncover hidden secrets."
+  },
+  {
+    "title": "Colonial Chronicles",
+    "thumbnail": "colonial_chronicles",
+    "imagesCount": 2,
+    "author": "Christopher Colonialist",
+    "description": "Experience the fascinating stories and challenges of the colonial era in this captivating chronicle."
+  },
+  {
+    "title": "The Art of War",
+    "thumbnail": "art_of_war",
+    "imagesCount": 1,
+    "author": "Sun Tzu",
+    "description": "A timeless classic on strategy and warfare, written by the legendary Sun Tzu."
+  }
+]
