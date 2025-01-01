@@ -1,0 +1,1 @@
+# Next Intl provider for React Shop

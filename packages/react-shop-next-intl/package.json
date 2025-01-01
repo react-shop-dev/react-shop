@@ -1,0 +1,43 @@
+{
+  "name": "react-shop-next-intl",
+  "version": "1.0.0-beta.1",
+  "description": "Next Intl provider for React Shop",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "author": "Vasyl Pukii",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-shop-dev/react-shop.git",
+    "directory": "packages/react-shop-next-intl"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsup && pnpm run types",
+    "watch": "tsup --watch",
+    "types": "node ../../scripts/declarations.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "@types/rtl-detect": "^1.0.2",
+    "cross-env": "^7.0.3",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "next-intl": "2.22.1",
+    "rtl-detect": "^1.1.2"
+  },
+  "peerDependencies": {
+    "next": "^14.2.4 || ^15.0.0",
+    "react": "^18.3.1 || ^19.0.0",
+    "react-dom": "^18.3.1 || ^19.0.0"
+  }
+}
