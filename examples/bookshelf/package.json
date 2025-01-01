@@ -1,0 +1,62 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Vasyl Pukii",
+  "description": "E-commerce demo site built with Next.js and React shop",
+  "homepage": "https://bookshelf-demo.com",
+  "keywords": [
+    "Next.js",
+    "React shop"
+  ],
+  "scripts": {
+    "dev": "next dev --experimental-https",
+    "dev:turbo": "next dev --experimental-https --turbo",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@auth/unstorage-adapter": "^2.7.4",
+    "@hookform/resolvers": "^3.9.1",
+    "@mui/icons-material": "^6.1.0",
+    "@mui/material": "^6.1.0",
+    "@stripe/react-stripe-js": "^2.7.1",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^3.6.0",
+    "deepmerge": "^4.3.1",
+    "inflection": "^3.0.0",
+    "next": "15.1.3",
+    "next-auth": "5.0.0-beta.25",
+    "plaiceholder": "^3.0.0",
+    "ra-data-fakerest": "^5.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-international-phone": "^4.2.6",
+    "react-shop": "1.0.0-beta.1",
+    "react-shop-auth": "1.0.0-beta.1",
+    "react-shop-mui": "1.0.0-beta.1",
+    "react-shop-stripe": "1.0.0-beta.1",
+    "resend": "^3.5.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.32.6",
+    "shop-data-generator": "^1.0.0",
+    "unstorage": "^1.14.4",
+    "uuid": "^9.0.1",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@netlify/blobs": "^7.4.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.8",
+    "eslint": "^9.5.0",
+    "eslint-config-next": "15.1.3",
+    "eslint-config-prettier": "^9.1.0",
+    "react-shop-types": "^1.0.0",
+    "typescript": "^5.4.5"
+  }
+}
