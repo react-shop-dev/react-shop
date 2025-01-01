@@ -1,0 +1,1 @@
+Stripe provider for React Shop
