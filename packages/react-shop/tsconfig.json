@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "importHelpers": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@functions/*": ["src/functions/*"],
+      "@functions": ["src/functions"],
+      "@type/*": ["src/types/*"],
+      "@type": ["src/types"],
+      "@hooks/*": ["src/client/hooks/*"],
+      "@hooks": ["src/client/hooks"],
+      "@core/*": ["src/client/core/*"],
+      "@core": ["src/client/core"],
+      "@lib/*": ["src/client/lib/*"],
+      "@lib": ["src/client/lib"],
+      "@data/*": ["src/client/data/*"],
+      "@data": ["src/client/data"],
+      "@controller/*": ["src/client/data/controller/*"],
+      "@controller": ["src/client/data/controller"]
+    }
+  },
+  "include": ["src"]
+}

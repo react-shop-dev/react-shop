@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "declarationDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "paths": {
+      "@functions/*": ["src/functions/*"],
+      "@functions": ["src/functions"],
+      "@type/*": ["src/types/*"],
+      "@type": ["src/types"],
+      "@hooks/*": ["src/client/hooks/*"],
+      "@hooks": ["src/client/hooks"],
+      "@core/*": ["src/client/core/*"],
+      "@lib/*": ["src/client/lib/*"],
+      "@lib": ["src/client/lib"],
+      "@core": ["src/client/core"],
+      "@data/*": ["src/client/data/*"],
+      "@data": ["src/client/data"],
+      "@controller/*": ["src/client/data/controller/*"],
+      "@controller": ["src/client/data/controller"]
+    }
+  }
+}

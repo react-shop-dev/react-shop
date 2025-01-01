@@ -1,0 +1,54 @@
+{
+  "title": {
+    "default": "React Shop",
+    "template": "React Shop | %s"
+  },
+  "description": "E-commerce project",
+  "openGraph": {
+    "type": "website",
+    "title": "React Shop",
+    "siteName": "React Shop",
+    "description": "E-commerce project",
+    "url": "",
+    "images": []
+  },
+  "social": [],
+  "session": {
+    "api": null
+  },
+  "auth": {
+    "accountUrl": "/account",
+    "afterLoginUrl": "account",
+    "registerApi": "register",
+    "resetPasswordApi": "password-reset"
+  },
+  "product": {
+    "resource": "products",
+    "title": "title",
+    "slug": "handle",
+    "thumbnail": "thumbnail",
+    "images": "images",
+    "price": "calculated_price",
+    "priceOriginal": "original_price",
+    "priceType": "price_type",
+    "discount": "difference",
+    "tags": "tags",
+    "status": "stock_status"
+  },
+  "lineItem": {
+    "quantity": "quantity",
+    "price": "unit_price",
+    "thumbnail": "thumbnail",
+    "productId": "product_id"
+  },
+  "feature": {
+    "search": true,
+    "breadcrumbs": true
+  },
+  "paths": {
+    "baseUrl": "",
+    "search": "/search",
+    "checkout": "/checkout",
+    "product": "/products/%s_id-%i"
+  }
+}

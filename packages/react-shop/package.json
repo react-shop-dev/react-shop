@@ -1,0 +1,135 @@
+{
+  "name": "react-shop",
+  "version": "1.0.0-beta.1",
+  "description": "Open-source library for creating E-commerce websites and themes",
+  "author": "Vasyl Pukii",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-shop-dev/react-shop.git",
+    "directory": "packages/react-shop"
+  },
+  "keywords": [
+    "react",
+    "next.js",
+    "e-commerce"
+  ],
+  "homepage": "https://github.com/react-shop-dev/react-shop#readme",
+  "bugs": "https://github.com/react-shop-dev/react-shop/issues",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsup && pnpm run types",
+    "watch": "tsup --watch",
+    "types": "node ../../scripts/declarations.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "browser": {
+    "fs": false,
+    "path": false
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "imports": {
+    "#lodash": {
+      "require": "lodash",
+      "import": "lodash-es"
+    }
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./translate": {
+      "import": {
+        "types": "./dist/client/i18n/useTranslate.d.mts",
+        "default": "./dist/translate.mjs"
+      },
+      "require": {
+        "types": "./dist/client/i18n/useTranslate.d.cts",
+        "default": "./dist/translate.cjs"
+      }
+    },
+    "./server": {
+      "import": {
+        "types": "./dist/server/index.d.mts",
+        "default": "./dist/server.mjs"
+      },
+      "require": {
+        "types": "./dist/server/index.d.cts",
+        "default": "./dist/server.cjs"
+      }
+    },
+    "./functions": {
+      "import": {
+        "types": "./dist/functions/index.d.mts",
+        "default": "./dist/functions.mjs"
+      },
+      "require": {
+        "types": "./dist/functions/index.d.cts",
+        "default": "./dist/functions.cjs"
+      }
+    },
+    "./middleware": {
+      "import": {
+        "types": "./dist/middleware/index.d.mts",
+        "default": "./dist/middleware.mjs"
+      },
+      "require": {
+        "types": "./dist/middleware/index.d.cts",
+        "default": "./dist/middleware.cjs"
+      }
+    }
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.3.1",
+    "@types/cookie": "^0.5.3",
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.8.10",
+    "@types/nprogress": "^0.2.3",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-is": "^18.3.0",
+    "@types/serialize-javascript": "^5.0.4",
+    "cross-env": "^7.0.3",
+    "expect": "^29.7.0",
+    "react-shop-types": "^1.0.0",
+    "rimraf": "^5.0.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "next": "^14.1.1 || ^15.0.0",
+    "react": "^18.3.1 || ^19.0.0",
+    "react-dom": "^18.3.1 || ^19.0.0"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.8.4",
+    "@tanstack/react-query-devtools": "^5.59.16",
+    "@tanstack/react-query-next-experimental": "^5.59.16",
+    "cookie": "^0.5.0",
+    "deepmerge": "^4.3.1",
+    "eventemitter3": "^5.0.1",
+    "inflection": "^3.0.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "query-string": "^9.0.0",
+    "react-hook-form": "^7.52.0",
+    "react-is": "^19.0.0",
+    "react-shop-english": "1.0.0-beta.1",
+    "serialize-javascript": "^6.0.2"
+  }
+}
