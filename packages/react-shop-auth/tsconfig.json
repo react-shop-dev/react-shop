@@ -1,0 +1,8 @@
+{
+  "include": ["src"],
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "moduleResolution": "Bundler"
+  }
+}

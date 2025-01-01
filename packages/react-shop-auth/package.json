@@ -1,0 +1,65 @@
+{
+  "name": "react-shop-auth",
+  "version": "1.0.0-beta.1",
+  "description": "Next-auth adapter for React Shop",
+  "license": "MIT",
+  "author": "Vasyl Pukii",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-shop-dev/react-shop.git",
+    "directory": "packages/react-shop-auth"
+  },
+  "keywords": [
+    "react-shop",
+    "next-auth"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && tsup && pnpm run types",
+    "types": "node ../../scripts/declarations.js"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./server": {
+      "import": {
+        "types": "./dist/server/index.d.mts",
+        "default": "./dist/server.mjs"
+      },
+      "require": {
+        "types": "./dist/server/index.d.cts",
+        "default": "./dist/server.cjs"
+      }
+    }
+  },
+  "devDependencies": {
+    "@auth/core": "^0.30.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "react-shop-types": "^1.0.0",
+    "rimraf": "^5.0.7",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "next-auth": "5.0.0-beta.25",
+    "react-shop": "1.0.0-beta.1"
+  },
+  "peerDependencies": {
+    "next": "^14.1.1 || ^15.0.0",
+    "react": "^18.3.1 || ^19.0.0",
+    "react-dom": "^18.3.1 || ^19.0.0"
+  }
+}
