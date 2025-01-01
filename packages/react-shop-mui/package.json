@@ -1,0 +1,1458 @@
+{
+  "name": "react-shop-mui",
+  "version": "1.0.0-beta.1",
+  "description": "MUI components for e-commerce templates",
+  "sideEffects": false,
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "author": "Vasyl Pukii",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-shop-dev/react-shop.git",
+    "directory": "packages/react-shop-mui"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsup && pnpm run types && pnpm run entry",
+    "watch": "tsup --watch",
+    "types": "node ../../scripts/declarations.js",
+    "entry": "node ./scripts/entry-points.js"
+  },
+  "imports": {
+    "#lodash": {
+      "require": "lodash",
+      "import": "lodash-es"
+    }
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/x-tree-view": "^7.17.0",
+    "@react-spring/web": "^9.7.3",
+    "clsx": "^2.0.0",
+    "inflection": "^3.0.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "material-ui-popup-state": "^5.3.1",
+    "nuka-carousel": "^7.0.0",
+    "query-string": "^9.0.0",
+    "react-is": "^19.0.0"
+  },
+  "devDependencies": {
+    "@mui/base": "5.0.0-beta.40",
+    "@mui/icons-material": "^6.1.0",
+    "@mui/material": "^6.1.0",
+    "@mui/system": "^6.1.0",
+    "@mui/utils": "^6.1.0",
+    "@testing-library/react": "^14.3.1",
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.9.0",
+    "@types/qs": "^6.9.9",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-is": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "csstype": "^3.1.3",
+    "expect": "^29.7.0",
+    "react-shop-types": "^1.0.0",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.0",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "@mui/icons-material": "*",
+    "@mui/material": "*",
+    "next": "^14.1.1 || ^15.0.0",
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0",
+    "react-shop": "1.0.0-beta.1"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./AuthBox": {
+      "import": {
+        "types": "./dist/lib/auth/AuthBox/index.d.mts",
+        "default": "./dist/lib/auth/AuthBox/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/AuthBox/index.d.cts",
+        "default": "./dist/lib/auth/AuthBox/index.d.cts"
+      }
+    },
+    "./AuthBoxTitle": {
+      "import": {
+        "types": "./dist/lib/auth/AuthBoxTitle/index.d.mts",
+        "default": "./dist/lib/auth/AuthBoxTitle/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/AuthBoxTitle/index.d.cts",
+        "default": "./dist/lib/auth/AuthBoxTitle/index.d.cts"
+      }
+    },
+    "./AuthFeedback": {
+      "import": {
+        "types": "./dist/lib/auth/AuthFeedback/index.d.mts",
+        "default": "./dist/lib/auth/AuthFeedback/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/AuthFeedback/index.d.cts",
+        "default": "./dist/lib/auth/AuthFeedback/index.d.cts"
+      }
+    },
+    "./AuthForm": {
+      "import": {
+        "types": "./dist/lib/auth/AuthForm/index.d.mts",
+        "default": "./dist/lib/auth/AuthForm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/AuthForm/index.d.cts",
+        "default": "./dist/lib/auth/AuthForm/index.d.cts"
+      }
+    },
+    "./AuthHeader": {
+      "import": {
+        "types": "./dist/lib/auth/AuthHeader/index.d.mts",
+        "default": "./dist/lib/auth/AuthHeader/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/AuthHeader/index.d.cts",
+        "default": "./dist/lib/auth/AuthHeader/index.d.cts"
+      }
+    },
+    "./AuthWrapper": {
+      "import": {
+        "types": "./dist/lib/auth/AuthWrapper/index.d.mts",
+        "default": "./dist/lib/auth/AuthWrapper/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/AuthWrapper/index.d.cts",
+        "default": "./dist/lib/auth/AuthWrapper/index.d.cts"
+      }
+    },
+    "./LoginButton": {
+      "import": {
+        "types": "./dist/lib/auth/LoginButton/index.d.mts",
+        "default": "./dist/lib/auth/LoginButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/LoginButton/index.d.cts",
+        "default": "./dist/lib/auth/LoginButton/index.d.cts"
+      }
+    },
+    "./LogoutButton": {
+      "import": {
+        "types": "./dist/lib/auth/LogoutButton/index.d.mts",
+        "default": "./dist/lib/auth/LogoutButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/LogoutButton/index.d.cts",
+        "default": "./dist/lib/auth/LogoutButton/index.d.cts"
+      }
+    },
+    "./LogoutMenuItem": {
+      "import": {
+        "types": "./dist/lib/auth/LogoutMenuItem/index.d.mts",
+        "default": "./dist/lib/auth/LogoutMenuItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/auth/LogoutMenuItem/index.d.cts",
+        "default": "./dist/lib/auth/LogoutMenuItem/index.d.cts"
+      }
+    },
+    "./ActionsButtonMenu": {
+      "import": {
+        "types": "./dist/lib/button/ActionsButtonMenu/index.d.mts",
+        "default": "./dist/lib/button/ActionsButtonMenu/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/ActionsButtonMenu/index.d.cts",
+        "default": "./dist/lib/button/ActionsButtonMenu/index.d.cts"
+      }
+    },
+    "./AddToCartButton": {
+      "import": {
+        "types": "./dist/lib/button/AddToCartButton/index.d.mts",
+        "default": "./dist/lib/button/AddToCartButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/AddToCartButton/index.d.cts",
+        "default": "./dist/lib/button/AddToCartButton/index.d.cts"
+      }
+    },
+    "./Button": {
+      "import": {
+        "types": "./dist/lib/button/Button/index.d.mts",
+        "default": "./dist/lib/button/Button/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/Button/index.d.cts",
+        "default": "./dist/lib/button/Button/index.d.cts"
+      }
+    },
+    "./CheckoutLink": {
+      "import": {
+        "types": "./dist/lib/button/CheckoutLink/index.d.mts",
+        "default": "./dist/lib/button/CheckoutLink/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/CheckoutLink/index.d.cts",
+        "default": "./dist/lib/button/CheckoutLink/index.d.cts"
+      }
+    },
+    "./DeleteButtonConfirm": {
+      "import": {
+        "types": "./dist/lib/button/DeleteButtonConfirm/index.d.mts",
+        "default": "./dist/lib/button/DeleteButtonConfirm/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/DeleteButtonConfirm/index.d.cts",
+        "default": "./dist/lib/button/DeleteButtonConfirm/index.d.cts"
+      }
+    },
+    "./IconTooltipButton": {
+      "import": {
+        "types": "./dist/lib/button/IconTooltipButton/index.d.mts",
+        "default": "./dist/lib/button/IconTooltipButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/IconTooltipButton/index.d.cts",
+        "default": "./dist/lib/button/IconTooltipButton/index.d.cts"
+      }
+    },
+    "./InBasketButton": {
+      "import": {
+        "types": "./dist/lib/button/InBasketButton/index.d.mts",
+        "default": "./dist/lib/button/InBasketButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/InBasketButton/index.d.cts",
+        "default": "./dist/lib/button/InBasketButton/index.d.cts"
+      }
+    },
+    "./ItemsPerPage": {
+      "import": {
+        "types": "./dist/lib/button/ItemsPerPage/index.d.mts",
+        "default": "./dist/lib/button/ItemsPerPage/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/ItemsPerPage/index.d.cts",
+        "default": "./dist/lib/button/ItemsPerPage/index.d.cts"
+      }
+    },
+    "./LocalesButton": {
+      "import": {
+        "types": "./dist/lib/button/LocalesButton/index.d.mts",
+        "default": "./dist/lib/button/LocalesButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/LocalesButton/index.d.cts",
+        "default": "./dist/lib/button/LocalesButton/index.d.cts"
+      }
+    },
+    "./PaymentButton": {
+      "import": {
+        "types": "./dist/lib/button/PaymentButton/index.d.mts",
+        "default": "./dist/lib/button/PaymentButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/PaymentButton/index.d.cts",
+        "default": "./dist/lib/button/PaymentButton/index.d.cts"
+      }
+    },
+    "./SelectAllButton": {
+      "import": {
+        "types": "./dist/lib/button/SelectAllButton/index.d.mts",
+        "default": "./dist/lib/button/SelectAllButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/SelectAllButton/index.d.cts",
+        "default": "./dist/lib/button/SelectAllButton/index.d.cts"
+      }
+    },
+    "./SortButton": {
+      "import": {
+        "types": "./dist/lib/button/SortButton/index.d.mts",
+        "default": "./dist/lib/button/SortButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/SortButton/index.d.cts",
+        "default": "./dist/lib/button/SortButton/index.d.cts"
+      }
+    },
+    "./SplitButton": {
+      "import": {
+        "types": "./dist/lib/button/SplitButton/index.d.mts",
+        "default": "./dist/lib/button/SplitButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/SplitButton/index.d.cts",
+        "default": "./dist/lib/button/SplitButton/index.d.cts"
+      }
+    },
+    "./SubmitButton": {
+      "import": {
+        "types": "./dist/lib/button/SubmitButton/index.d.mts",
+        "default": "./dist/lib/button/SubmitButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/SubmitButton/index.d.cts",
+        "default": "./dist/lib/button/SubmitButton/index.d.cts"
+      }
+    },
+    "./SwitchViewMode": {
+      "import": {
+        "types": "./dist/lib/button/SwitchViewMode/index.d.mts",
+        "default": "./dist/lib/button/SwitchViewMode/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/SwitchViewMode/index.d.cts",
+        "default": "./dist/lib/button/SwitchViewMode/index.d.cts"
+      }
+    },
+    "./ToggleSelectionButton": {
+      "import": {
+        "types": "./dist/lib/button/ToggleSelectionButton/index.d.mts",
+        "default": "./dist/lib/button/ToggleSelectionButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/ToggleSelectionButton/index.d.cts",
+        "default": "./dist/lib/button/ToggleSelectionButton/index.d.cts"
+      }
+    },
+    "./ToggleThemeButton": {
+      "import": {
+        "types": "./dist/lib/button/ToggleThemeButton/index.d.mts",
+        "default": "./dist/lib/button/ToggleThemeButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/button/ToggleThemeButton/index.d.cts",
+        "default": "./dist/lib/button/ToggleThemeButton/index.d.cts"
+      }
+    },
+    "./DefaultList": {
+      "import": {
+        "types": "./dist/lib/collection/DefaultList/index.d.mts",
+        "default": "./dist/lib/collection/DefaultList/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/DefaultList/index.d.cts",
+        "default": "./dist/lib/collection/DefaultList/index.d.cts"
+      }
+    },
+    "./Empty": {
+      "import": {
+        "types": "./dist/lib/collection/Empty/index.d.mts",
+        "default": "./dist/lib/collection/Empty/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/Empty/index.d.cts",
+        "default": "./dist/lib/collection/Empty/index.d.cts"
+      }
+    },
+    "./GridContainer": {
+      "import": {
+        "types": "./dist/lib/collection/GridContainer/index.d.mts",
+        "default": "./dist/lib/collection/GridContainer/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/GridContainer/index.d.cts",
+        "default": "./dist/lib/collection/GridContainer/index.d.cts"
+      }
+    },
+    "./InfinitePagination": {
+      "import": {
+        "types": "./dist/lib/collection/InfinitePagination/index.d.mts",
+        "default": "./dist/lib/collection/InfinitePagination/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/InfinitePagination/index.d.cts",
+        "default": "./dist/lib/collection/InfinitePagination/index.d.cts"
+      }
+    },
+    "./LoaderGrid": {
+      "import": {
+        "types": "./dist/lib/collection/LoaderGrid/index.d.mts",
+        "default": "./dist/lib/collection/LoaderGrid/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/LoaderGrid/index.d.cts",
+        "default": "./dist/lib/collection/LoaderGrid/index.d.cts"
+      }
+    },
+    "./LoaderList": {
+      "import": {
+        "types": "./dist/lib/collection/LoaderList/index.d.mts",
+        "default": "./dist/lib/collection/LoaderList/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/LoaderList/index.d.cts",
+        "default": "./dist/lib/collection/LoaderList/index.d.cts"
+      }
+    },
+    "./NoResults": {
+      "import": {
+        "types": "./dist/lib/collection/NoResults/index.d.mts",
+        "default": "./dist/lib/collection/NoResults/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/NoResults/index.d.cts",
+        "default": "./dist/lib/collection/NoResults/index.d.cts"
+      }
+    },
+    "./Pagination": {
+      "import": {
+        "types": "./dist/lib/collection/Pagination/index.d.mts",
+        "default": "./dist/lib/collection/Pagination/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/Pagination/index.d.cts",
+        "default": "./dist/lib/collection/Pagination/index.d.cts"
+      }
+    },
+    "./ProductGrid": {
+      "import": {
+        "types": "./dist/lib/collection/ProductGrid/index.d.mts",
+        "default": "./dist/lib/collection/ProductGrid/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/ProductGrid/index.d.cts",
+        "default": "./dist/lib/collection/ProductGrid/index.d.cts"
+      }
+    },
+    "./ProductList": {
+      "import": {
+        "types": "./dist/lib/collection/ProductList/index.d.mts",
+        "default": "./dist/lib/collection/ProductList/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/ProductList/index.d.cts",
+        "default": "./dist/lib/collection/ProductList/index.d.cts"
+      }
+    },
+    "./ProductSlider": {
+      "import": {
+        "types": "./dist/lib/collection/ProductSlider/index.d.mts",
+        "default": "./dist/lib/collection/ProductSlider/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/ProductSlider/index.d.cts",
+        "default": "./dist/lib/collection/ProductSlider/index.d.cts"
+      }
+    },
+    "./ProductView": {
+      "import": {
+        "types": "./dist/lib/collection/ProductView/index.d.mts",
+        "default": "./dist/lib/collection/ProductView/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/ProductView/index.d.cts",
+        "default": "./dist/lib/collection/ProductView/index.d.cts"
+      }
+    },
+    "./SliderLoader": {
+      "import": {
+        "types": "./dist/lib/collection/SliderLoader/index.d.mts",
+        "default": "./dist/lib/collection/SliderLoader/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/collection/SliderLoader/index.d.cts",
+        "default": "./dist/lib/collection/SliderLoader/index.d.cts"
+      }
+    },
+    "./Accordion": {
+      "import": {
+        "types": "./dist/lib/common/Accordion/index.d.mts",
+        "default": "./dist/lib/common/Accordion/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/Accordion/index.d.cts",
+        "default": "./dist/lib/common/Accordion/index.d.cts"
+      }
+    },
+    "./Dialog": {
+      "import": {
+        "types": "./dist/lib/common/Dialog/index.d.mts",
+        "default": "./dist/lib/common/Dialog/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/Dialog/index.d.cts",
+        "default": "./dist/lib/common/Dialog/index.d.cts"
+      }
+    },
+    "./IconBoxButton": {
+      "import": {
+        "types": "./dist/lib/common/IconBoxButton/index.d.mts",
+        "default": "./dist/lib/common/IconBoxButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/IconBoxButton/index.d.cts",
+        "default": "./dist/lib/common/IconBoxButton/index.d.cts"
+      }
+    },
+    "./Label": {
+      "import": {
+        "types": "./dist/lib/common/Label/index.d.mts",
+        "default": "./dist/lib/common/Label/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/Label/index.d.cts",
+        "default": "./dist/lib/common/Label/index.d.cts"
+      }
+    },
+    "./Loader": {
+      "import": {
+        "types": "./dist/lib/common/Loader/index.d.mts",
+        "default": "./dist/lib/common/Loader/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/Loader/index.d.cts",
+        "default": "./dist/lib/common/Loader/index.d.cts"
+      }
+    },
+    "./NavLink": {
+      "import": {
+        "types": "./dist/lib/common/NavLink/index.d.mts",
+        "default": "./dist/lib/common/NavLink/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/NavLink/index.d.cts",
+        "default": "./dist/lib/common/NavLink/index.d.cts"
+      }
+    },
+    "./NextMuiLink": {
+      "import": {
+        "types": "./dist/lib/common/NextMuiLink/index.d.mts",
+        "default": "./dist/lib/common/NextMuiLink/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/NextMuiLink/index.d.cts",
+        "default": "./dist/lib/common/NextMuiLink/index.d.cts"
+      }
+    },
+    "./ZoomDialog": {
+      "import": {
+        "types": "./dist/lib/common/ZoomDialog/index.d.mts",
+        "default": "./dist/lib/common/ZoomDialog/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/common/ZoomDialog/index.d.cts",
+        "default": "./dist/lib/common/ZoomDialog/index.d.cts"
+      }
+    },
+    "./PriceField": {
+      "import": {
+        "types": "./dist/lib/field/PriceField/index.d.mts",
+        "default": "./dist/lib/field/PriceField/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/field/PriceField/index.d.cts",
+        "default": "./dist/lib/field/PriceField/index.d.cts"
+      }
+    },
+    "./RatingField": {
+      "import": {
+        "types": "./dist/lib/field/RatingField/index.d.mts",
+        "default": "./dist/lib/field/RatingField/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/field/RatingField/index.d.cts",
+        "default": "./dist/lib/field/RatingField/index.d.cts"
+      }
+    },
+    "./ReferenceField": {
+      "import": {
+        "types": "./dist/lib/field/ReferenceField/index.d.mts",
+        "default": "./dist/lib/field/ReferenceField/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/field/ReferenceField/index.d.cts",
+        "default": "./dist/lib/field/ReferenceField/index.d.cts"
+      }
+    },
+    "./ReferenceManyCount": {
+      "import": {
+        "types": "./dist/lib/field/ReferenceManyCount/index.d.mts",
+        "default": "./dist/lib/field/ReferenceManyCount/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/field/ReferenceManyCount/index.d.cts",
+        "default": "./dist/lib/field/ReferenceManyCount/index.d.cts"
+      }
+    },
+    "./TextField": {
+      "import": {
+        "types": "./dist/lib/field/TextField/index.d.mts",
+        "default": "./dist/lib/field/TextField/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/field/TextField/index.d.cts",
+        "default": "./dist/lib/field/TextField/index.d.cts"
+      }
+    },
+    "./AutocompleteInput": {
+      "import": {
+        "types": "./dist/lib/input/AutocompleteInput/index.d.mts",
+        "default": "./dist/lib/input/AutocompleteInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/AutocompleteInput/index.d.cts",
+        "default": "./dist/lib/input/AutocompleteInput/index.d.cts"
+      }
+    },
+    "./BooleanInput": {
+      "import": {
+        "types": "./dist/lib/input/BooleanInput/index.d.mts",
+        "default": "./dist/lib/input/BooleanInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/BooleanInput/index.d.cts",
+        "default": "./dist/lib/input/BooleanInput/index.d.cts"
+      }
+    },
+    "./CardNumberInput": {
+      "import": {
+        "types": "./dist/lib/input/CardNumberInput/index.d.mts",
+        "default": "./dist/lib/input/CardNumberInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/CardNumberInput/index.d.cts",
+        "default": "./dist/lib/input/CardNumberInput/index.d.cts"
+      }
+    },
+    "./CardVerificationInput": {
+      "import": {
+        "types": "./dist/lib/input/CardVerificationInput/index.d.mts",
+        "default": "./dist/lib/input/CardVerificationInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/CardVerificationInput/index.d.cts",
+        "default": "./dist/lib/input/CardVerificationInput/index.d.cts"
+      }
+    },
+    "./CheckboxGroupInput": {
+      "import": {
+        "types": "./dist/lib/input/CheckboxGroupInput/index.d.mts",
+        "default": "./dist/lib/input/CheckboxGroupInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/CheckboxGroupInput/index.d.cts",
+        "default": "./dist/lib/input/CheckboxGroupInput/index.d.cts"
+      }
+    },
+    "./CheckboxGroupInputItem": {
+      "import": {
+        "types": "./dist/lib/input/CheckboxGroupInputItem/index.d.mts",
+        "default": "./dist/lib/input/CheckboxGroupInputItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/CheckboxGroupInputItem/index.d.cts",
+        "default": "./dist/lib/input/CheckboxGroupInputItem/index.d.cts"
+      }
+    },
+    "./DateInput": {
+      "import": {
+        "types": "./dist/lib/input/DateInput/index.d.mts",
+        "default": "./dist/lib/input/DateInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/DateInput/index.d.cts",
+        "default": "./dist/lib/input/DateInput/index.d.cts"
+      }
+    },
+    "./ExpiryInput": {
+      "import": {
+        "types": "./dist/lib/input/ExpiryInput/index.d.mts",
+        "default": "./dist/lib/input/ExpiryInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/ExpiryInput/index.d.cts",
+        "default": "./dist/lib/input/ExpiryInput/index.d.cts"
+      }
+    },
+    "./InputHelperText": {
+      "import": {
+        "types": "./dist/lib/input/InputHelperText/index.d.mts",
+        "default": "./dist/lib/input/InputHelperText/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/InputHelperText/index.d.cts",
+        "default": "./dist/lib/input/InputHelperText/index.d.cts"
+      }
+    },
+    "./LoadingInput": {
+      "import": {
+        "types": "./dist/lib/input/LoadingInput/index.d.mts",
+        "default": "./dist/lib/input/LoadingInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/LoadingInput/index.d.cts",
+        "default": "./dist/lib/input/LoadingInput/index.d.cts"
+      }
+    },
+    "./NumberSpinner": {
+      "import": {
+        "types": "./dist/lib/input/NumberSpinner/index.d.mts",
+        "default": "./dist/lib/input/NumberSpinner/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/NumberSpinner/index.d.cts",
+        "default": "./dist/lib/input/NumberSpinner/index.d.cts"
+      }
+    },
+    "./PasswordInput": {
+      "import": {
+        "types": "./dist/lib/input/PasswordInput/index.d.mts",
+        "default": "./dist/lib/input/PasswordInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/PasswordInput/index.d.cts",
+        "default": "./dist/lib/input/PasswordInput/index.d.cts"
+      }
+    },
+    "./PaymentInput": {
+      "import": {
+        "types": "./dist/lib/input/PaymentInput/index.d.mts",
+        "default": "./dist/lib/input/PaymentInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/PaymentInput/index.d.cts",
+        "default": "./dist/lib/input/PaymentInput/index.d.cts"
+      }
+    },
+    "./QuantityInput": {
+      "import": {
+        "types": "./dist/lib/input/QuantityInput/index.d.mts",
+        "default": "./dist/lib/input/QuantityInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/QuantityInput/index.d.cts",
+        "default": "./dist/lib/input/QuantityInput/index.d.cts"
+      }
+    },
+    "./RadioButtonGroupInput": {
+      "import": {
+        "types": "./dist/lib/input/RadioButtonGroupInput/index.d.mts",
+        "default": "./dist/lib/input/RadioButtonGroupInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/RadioButtonGroupInput/index.d.cts",
+        "default": "./dist/lib/input/RadioButtonGroupInput/index.d.cts"
+      }
+    },
+    "./RadioButtonGroupInputItem": {
+      "import": {
+        "types": "./dist/lib/input/RadioButtonGroupInputItem/index.d.mts",
+        "default": "./dist/lib/input/RadioButtonGroupInputItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/RadioButtonGroupInputItem/index.d.cts",
+        "default": "./dist/lib/input/RadioButtonGroupInputItem/index.d.cts"
+      }
+    },
+    "./RatingInput": {
+      "import": {
+        "types": "./dist/lib/input/RatingInput/index.d.mts",
+        "default": "./dist/lib/input/RatingInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/RatingInput/index.d.cts",
+        "default": "./dist/lib/input/RatingInput/index.d.cts"
+      }
+    },
+    "./SelectInput": {
+      "import": {
+        "types": "./dist/lib/input/SelectInput/index.d.mts",
+        "default": "./dist/lib/input/SelectInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/SelectInput/index.d.cts",
+        "default": "./dist/lib/input/SelectInput/index.d.cts"
+      }
+    },
+    "./TextInput": {
+      "import": {
+        "types": "./dist/lib/input/TextInput/index.d.mts",
+        "default": "./dist/lib/input/TextInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/TextInput/index.d.cts",
+        "default": "./dist/lib/input/TextInput/index.d.cts"
+      }
+    },
+    "./TimeInput": {
+      "import": {
+        "types": "./dist/lib/input/TimeInput/index.d.mts",
+        "default": "./dist/lib/input/TimeInput/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/input/TimeInput/index.d.cts",
+        "default": "./dist/lib/input/TimeInput/index.d.cts"
+      }
+    },
+    "./AddItemButton": {
+      "import": {
+        "types": "./dist/lib/iterator/AddItemButton/index.d.mts",
+        "default": "./dist/lib/iterator/AddItemButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/AddItemButton/index.d.cts",
+        "default": "./dist/lib/iterator/AddItemButton/index.d.cts"
+      }
+    },
+    "./ArrayInputControl": {
+      "import": {
+        "types": "./dist/lib/iterator/ArrayInputControl/index.d.mts",
+        "default": "./dist/lib/iterator/ArrayInputControl/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/ArrayInputControl/index.d.cts",
+        "default": "./dist/lib/iterator/ArrayInputControl/index.d.cts"
+      }
+    },
+    "./EditItemButton": {
+      "import": {
+        "types": "./dist/lib/iterator/EditItemButton/index.d.mts",
+        "default": "./dist/lib/iterator/EditItemButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/EditItemButton/index.d.cts",
+        "default": "./dist/lib/iterator/EditItemButton/index.d.cts"
+      }
+    },
+    "./FormIterator": {
+      "import": {
+        "types": "./dist/lib/iterator/FormIterator/index.d.mts",
+        "default": "./dist/lib/iterator/FormIterator/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/FormIterator/index.d.cts",
+        "default": "./dist/lib/iterator/FormIterator/index.d.cts"
+      }
+    },
+    "./OrderChangebuttons": {
+      "import": {
+        "types": "./dist/lib/iterator/OrderChangebuttons/index.d.mts",
+        "default": "./dist/lib/iterator/OrderChangebuttons/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/OrderChangebuttons/index.d.cts",
+        "default": "./dist/lib/iterator/OrderChangebuttons/index.d.cts"
+      }
+    },
+    "./RemoveItemButton": {
+      "import": {
+        "types": "./dist/lib/iterator/RemoveItemButton/index.d.mts",
+        "default": "./dist/lib/iterator/RemoveItemButton/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/RemoveItemButton/index.d.cts",
+        "default": "./dist/lib/iterator/RemoveItemButton/index.d.cts"
+      }
+    },
+    "./SimpleFormIterator": {
+      "import": {
+        "types": "./dist/lib/iterator/SimpleFormIterator/index.d.mts",
+        "default": "./dist/lib/iterator/SimpleFormIterator/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/SimpleFormIterator/index.d.cts",
+        "default": "./dist/lib/iterator/SimpleFormIterator/index.d.cts"
+      }
+    },
+    "./SimpleFormIteratorItem": {
+      "import": {
+        "types": "./dist/lib/iterator/SimpleFormIteratorItem/index.d.mts",
+        "default": "./dist/lib/iterator/SimpleFormIteratorItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/iterator/SimpleFormIteratorItem/index.d.cts",
+        "default": "./dist/lib/iterator/SimpleFormIteratorItem/index.d.cts"
+      }
+    },
+    "./Drawer": {
+      "import": {
+        "types": "./dist/lib/layout/Drawer/index.d.mts",
+        "default": "./dist/lib/layout/Drawer/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/layout/Drawer/index.d.cts",
+        "default": "./dist/lib/layout/Drawer/index.d.cts"
+      }
+    },
+    "./Header": {
+      "import": {
+        "types": "./dist/lib/layout/Header/index.d.mts",
+        "default": "./dist/lib/layout/Header/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/layout/Header/index.d.cts",
+        "default": "./dist/lib/layout/Header/index.d.cts"
+      }
+    },
+    "./Layout": {
+      "import": {
+        "types": "./dist/lib/layout/Layout/index.d.mts",
+        "default": "./dist/lib/layout/Layout/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/layout/Layout/index.d.cts",
+        "default": "./dist/lib/layout/Layout/index.d.cts"
+      }
+    },
+    "./Sidebar": {
+      "import": {
+        "types": "./dist/lib/layout/Sidebar/index.d.mts",
+        "default": "./dist/lib/layout/Sidebar/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/layout/Sidebar/index.d.cts",
+        "default": "./dist/lib/layout/Sidebar/index.d.cts"
+      }
+    },
+    "./Sticky": {
+      "import": {
+        "types": "./dist/lib/layout/Sticky/index.d.mts",
+        "default": "./dist/lib/layout/Sticky/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/layout/Sticky/index.d.cts",
+        "default": "./dist/lib/layout/Sticky/index.d.cts"
+      }
+    },
+    "./TopBar": {
+      "import": {
+        "types": "./dist/lib/layout/TopBar/index.d.mts",
+        "default": "./dist/lib/layout/TopBar/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/layout/TopBar/index.d.cts",
+        "default": "./dist/lib/layout/TopBar/index.d.cts"
+      }
+    },
+    "./layout": {
+      "import": {
+        "types": "./dist/lib/layout/index.d.mts",
+        "default": "./dist/lib/layout/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/layout/index.d.cts",
+        "default": "./dist/lib/layout/index.d.cts"
+      }
+    },
+    "./Notification": {
+      "import": {
+        "types": "./dist/lib/notification/Notification/index.d.mts",
+        "default": "./dist/lib/notification/Notification/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/notification/Notification/index.d.cts",
+        "default": "./dist/lib/notification/Notification/index.d.cts"
+      }
+    },
+    "./NotificationItem": {
+      "import": {
+        "types": "./dist/lib/notification/NotificationItem/index.d.mts",
+        "default": "./dist/lib/notification/NotificationItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/notification/NotificationItem/index.d.cts",
+        "default": "./dist/lib/notification/NotificationItem/index.d.cts"
+      }
+    },
+    "./AccountAvatar": {
+      "import": {
+        "types": "./dist/lib/picture/AccountAvatar/index.d.mts",
+        "default": "./dist/lib/picture/AccountAvatar/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/picture/AccountAvatar/index.d.cts",
+        "default": "./dist/lib/picture/AccountAvatar/index.d.cts"
+      }
+    },
+    "./ImageGallery": {
+      "import": {
+        "types": "./dist/lib/picture/ImageGallery/index.d.mts",
+        "default": "./dist/lib/picture/ImageGallery/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/picture/ImageGallery/index.d.cts",
+        "default": "./dist/lib/picture/ImageGallery/index.d.cts"
+      }
+    },
+    "./ImagePlaceholder": {
+      "import": {
+        "types": "./dist/lib/picture/ImagePlaceholder/index.d.mts",
+        "default": "./dist/lib/picture/ImagePlaceholder/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/picture/ImagePlaceholder/index.d.cts",
+        "default": "./dist/lib/picture/ImagePlaceholder/index.d.cts"
+      }
+    },
+    "./ImageWithZoom": {
+      "import": {
+        "types": "./dist/lib/picture/ImageWithZoom/index.d.mts",
+        "default": "./dist/lib/picture/ImageWithZoom/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/picture/ImageWithZoom/index.d.cts",
+        "default": "./dist/lib/picture/ImageWithZoom/index.d.cts"
+      }
+    },
+    "./LazyImageHolder": {
+      "import": {
+        "types": "./dist/lib/picture/LazyImageHolder/index.d.mts",
+        "default": "./dist/lib/picture/LazyImageHolder/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/picture/LazyImageHolder/index.d.cts",
+        "default": "./dist/lib/picture/LazyImageHolder/index.d.cts"
+      }
+    },
+    "./MuiLazyImage": {
+      "import": {
+        "types": "./dist/lib/picture/MuiLazyImage/index.d.mts",
+        "default": "./dist/lib/picture/MuiLazyImage/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/picture/MuiLazyImage/index.d.cts",
+        "default": "./dist/lib/picture/MuiLazyImage/index.d.cts"
+      }
+    },
+    "./GridPlaceholder": {
+      "import": {
+        "types": "./dist/lib/product/GridPlaceholder/index.d.mts",
+        "default": "./dist/lib/product/GridPlaceholder/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/GridPlaceholder/index.d.cts",
+        "default": "./dist/lib/product/GridPlaceholder/index.d.cts"
+      }
+    },
+    "./ListPlaceholder": {
+      "import": {
+        "types": "./dist/lib/product/ListPlaceholder/index.d.mts",
+        "default": "./dist/lib/product/ListPlaceholder/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ListPlaceholder/index.d.cts",
+        "default": "./dist/lib/product/ListPlaceholder/index.d.cts"
+      }
+    },
+    "./ProductActions": {
+      "import": {
+        "types": "./dist/lib/product/ProductActions/index.d.mts",
+        "default": "./dist/lib/product/ProductActions/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductActions/index.d.cts",
+        "default": "./dist/lib/product/ProductActions/index.d.cts"
+      }
+    },
+    "./ProductCard": {
+      "import": {
+        "types": "./dist/lib/product/ProductCard/index.d.mts",
+        "default": "./dist/lib/product/ProductCard/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductCard/index.d.cts",
+        "default": "./dist/lib/product/ProductCard/index.d.cts"
+      }
+    },
+    "./ProductGridItem": {
+      "import": {
+        "types": "./dist/lib/product/ProductGridItem/index.d.mts",
+        "default": "./dist/lib/product/ProductGridItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductGridItem/index.d.cts",
+        "default": "./dist/lib/product/ProductGridItem/index.d.cts"
+      }
+    },
+    "./ProductLink": {
+      "import": {
+        "types": "./dist/lib/product/ProductLink/index.d.mts",
+        "default": "./dist/lib/product/ProductLink/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductLink/index.d.cts",
+        "default": "./dist/lib/product/ProductLink/index.d.cts"
+      }
+    },
+    "./ProductListItem": {
+      "import": {
+        "types": "./dist/lib/product/ProductListItem/index.d.mts",
+        "default": "./dist/lib/product/ProductListItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductListItem/index.d.cts",
+        "default": "./dist/lib/product/ProductListItem/index.d.cts"
+      }
+    },
+    "./ProductOptions": {
+      "import": {
+        "types": "./dist/lib/product/ProductOptions/index.d.mts",
+        "default": "./dist/lib/product/ProductOptions/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductOptions/index.d.cts",
+        "default": "./dist/lib/product/ProductOptions/index.d.cts"
+      }
+    },
+    "./ProductPicture": {
+      "import": {
+        "types": "./dist/lib/product/ProductPicture/index.d.mts",
+        "default": "./dist/lib/product/ProductPicture/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductPicture/index.d.cts",
+        "default": "./dist/lib/product/ProductPicture/index.d.cts"
+      }
+    },
+    "./ProductStatus": {
+      "import": {
+        "types": "./dist/lib/product/ProductStatus/index.d.mts",
+        "default": "./dist/lib/product/ProductStatus/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductStatus/index.d.cts",
+        "default": "./dist/lib/product/ProductStatus/index.d.cts"
+      }
+    },
+    "./ProductTags": {
+      "import": {
+        "types": "./dist/lib/product/ProductTags/index.d.mts",
+        "default": "./dist/lib/product/ProductTags/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductTags/index.d.cts",
+        "default": "./dist/lib/product/ProductTags/index.d.cts"
+      }
+    },
+    "./ProductTitle": {
+      "import": {
+        "types": "./dist/lib/product/ProductTitle/index.d.mts",
+        "default": "./dist/lib/product/ProductTitle/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/product/ProductTitle/index.d.cts",
+        "default": "./dist/lib/product/ProductTitle/index.d.cts"
+      }
+    },
+    "./Aside": {
+      "import": {
+        "types": "./dist/lib/views/Aside/index.d.mts",
+        "default": "./dist/lib/views/Aside/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/Aside/index.d.cts",
+        "default": "./dist/lib/views/Aside/index.d.cts"
+      }
+    },
+    "./Centered": {
+      "import": {
+        "types": "./dist/lib/views/Centered/index.d.mts",
+        "default": "./dist/lib/views/Centered/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/Centered/index.d.cts",
+        "default": "./dist/lib/views/Centered/index.d.cts"
+      }
+    },
+    "./ErrorHandler": {
+      "import": {
+        "types": "./dist/lib/views/ErrorHandler/index.d.mts",
+        "default": "./dist/lib/views/ErrorHandler/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/ErrorHandler/index.d.cts",
+        "default": "./dist/lib/views/ErrorHandler/index.d.cts"
+      }
+    },
+    "./FlexBetween": {
+      "import": {
+        "types": "./dist/lib/views/FlexBetween/index.d.mts",
+        "default": "./dist/lib/views/FlexBetween/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/FlexBetween/index.d.cts",
+        "default": "./dist/lib/views/FlexBetween/index.d.cts"
+      }
+    },
+    "./FlexBox": {
+      "import": {
+        "types": "./dist/lib/views/FlexBox/index.d.mts",
+        "default": "./dist/lib/views/FlexBox/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/FlexBox/index.d.cts",
+        "default": "./dist/lib/views/FlexBox/index.d.cts"
+      }
+    },
+    "./FlexRowCenter": {
+      "import": {
+        "types": "./dist/lib/views/FlexRowCenter/index.d.mts",
+        "default": "./dist/lib/views/FlexRowCenter/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/FlexRowCenter/index.d.cts",
+        "default": "./dist/lib/views/FlexRowCenter/index.d.cts"
+      }
+    },
+    "./NoMatch": {
+      "import": {
+        "types": "./dist/lib/views/NoMatch/index.d.mts",
+        "default": "./dist/lib/views/NoMatch/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/NoMatch/index.d.cts",
+        "default": "./dist/lib/views/NoMatch/index.d.cts"
+      }
+    },
+    "./PageToolbar": {
+      "import": {
+        "types": "./dist/lib/views/PageToolbar/index.d.mts",
+        "default": "./dist/lib/views/PageToolbar/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/PageToolbar/index.d.cts",
+        "default": "./dist/lib/views/PageToolbar/index.d.cts"
+      }
+    },
+    "./PageView": {
+      "import": {
+        "types": "./dist/lib/views/PageView/index.d.mts",
+        "default": "./dist/lib/views/PageView/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/PageView/index.d.cts",
+        "default": "./dist/lib/views/PageView/index.d.cts"
+      }
+    },
+    "./TitleBox": {
+      "import": {
+        "types": "./dist/lib/views/TitleBox/index.d.mts",
+        "default": "./dist/lib/views/TitleBox/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/views/TitleBox/index.d.cts",
+        "default": "./dist/lib/views/TitleBox/index.d.cts"
+      }
+    },
+    "./Breadcrumbs": {
+      "import": {
+        "types": "./dist/lib/widgets/Breadcrumbs/index.d.mts",
+        "default": "./dist/lib/widgets/Breadcrumbs/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/Breadcrumbs/index.d.cts",
+        "default": "./dist/lib/widgets/Breadcrumbs/index.d.cts"
+      }
+    },
+    "./Carousel": {
+      "import": {
+        "types": "./dist/lib/widgets/Carousel/index.d.mts",
+        "default": "./dist/lib/widgets/Carousel/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/Carousel/index.d.cts",
+        "default": "./dist/lib/widgets/Carousel/index.d.cts"
+      }
+    },
+    "./CarouselMui": {
+      "import": {
+        "types": "./dist/lib/widgets/CarouselMui/index.d.mts",
+        "default": "./dist/lib/widgets/CarouselMui/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/CarouselMui/index.d.cts",
+        "default": "./dist/lib/widgets/CarouselMui/index.d.cts"
+      }
+    },
+    "./CatalogMenu": {
+      "import": {
+        "types": "./dist/lib/widgets/CatalogMenu/index.d.mts",
+        "default": "./dist/lib/widgets/CatalogMenu/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/CatalogMenu/index.d.cts",
+        "default": "./dist/lib/widgets/CatalogMenu/index.d.cts"
+      }
+    },
+    "./Controls": {
+      "import": {
+        "types": "./dist/lib/widgets/Controls/index.d.mts",
+        "default": "./dist/lib/widgets/Controls/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/Controls/index.d.cts",
+        "default": "./dist/lib/widgets/Controls/index.d.cts"
+      }
+    },
+    "./CookiesBar": {
+      "import": {
+        "types": "./dist/lib/widgets/CookiesBar/index.d.mts",
+        "default": "./dist/lib/widgets/CookiesBar/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/CookiesBar/index.d.cts",
+        "default": "./dist/lib/widgets/CookiesBar/index.d.cts"
+      }
+    },
+    "./Dots": {
+      "import": {
+        "types": "./dist/lib/widgets/Dots/index.d.mts",
+        "default": "./dist/lib/widgets/Dots/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/Dots/index.d.cts",
+        "default": "./dist/lib/widgets/Dots/index.d.cts"
+      }
+    },
+    "./Filter": {
+      "import": {
+        "types": "./dist/lib/widgets/Filter/index.d.mts",
+        "default": "./dist/lib/widgets/Filter/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/Filter/index.d.cts",
+        "default": "./dist/lib/widgets/Filter/index.d.cts"
+      }
+    },
+    "./FilterInputGroup": {
+      "import": {
+        "types": "./dist/lib/widgets/FilterInputGroup/index.d.mts",
+        "default": "./dist/lib/widgets/FilterInputGroup/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/FilterInputGroup/index.d.cts",
+        "default": "./dist/lib/widgets/FilterInputGroup/index.d.cts"
+      }
+    },
+    "./FilterListItem": {
+      "import": {
+        "types": "./dist/lib/widgets/FilterListItem/index.d.mts",
+        "default": "./dist/lib/widgets/FilterListItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/FilterListItem/index.d.cts",
+        "default": "./dist/lib/widgets/FilterListItem/index.d.cts"
+      }
+    },
+    "./FilterLiveSearch": {
+      "import": {
+        "types": "./dist/lib/widgets/FilterLiveSearch/index.d.mts",
+        "default": "./dist/lib/widgets/FilterLiveSearch/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/FilterLiveSearch/index.d.cts",
+        "default": "./dist/lib/widgets/FilterLiveSearch/index.d.cts"
+      }
+    },
+    "./Menu": {
+      "import": {
+        "types": "./dist/lib/widgets/Menu/index.d.mts",
+        "default": "./dist/lib/widgets/Menu/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/Menu/index.d.cts",
+        "default": "./dist/lib/widgets/Menu/index.d.cts"
+      }
+    },
+    "./MenuItem": {
+      "import": {
+        "types": "./dist/lib/widgets/MenuItem/index.d.mts",
+        "default": "./dist/lib/widgets/MenuItem/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/MenuItem/index.d.cts",
+        "default": "./dist/lib/widgets/MenuItem/index.d.cts"
+      }
+    },
+    "./MultiLevelMenu": {
+      "import": {
+        "types": "./dist/lib/widgets/MultiLevelMenu/index.d.mts",
+        "default": "./dist/lib/widgets/MultiLevelMenu/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/MultiLevelMenu/index.d.cts",
+        "default": "./dist/lib/widgets/MultiLevelMenu/index.d.cts"
+      }
+    },
+    "./NavBar": {
+      "import": {
+        "types": "./dist/lib/widgets/NavBar/index.d.mts",
+        "default": "./dist/lib/widgets/NavBar/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/NavBar/index.d.cts",
+        "default": "./dist/lib/widgets/NavBar/index.d.cts"
+      }
+    },
+    "./ShopTab": {
+      "import": {
+        "types": "./dist/lib/widgets/ShopTab/index.d.mts",
+        "default": "./dist/lib/widgets/ShopTab/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/ShopTab/index.d.cts",
+        "default": "./dist/lib/widgets/ShopTab/index.d.cts"
+      }
+    },
+    "./ShopTabs": {
+      "import": {
+        "types": "./dist/lib/widgets/ShopTabs/index.d.mts",
+        "default": "./dist/lib/widgets/ShopTabs/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/ShopTabs/index.d.cts",
+        "default": "./dist/lib/widgets/ShopTabs/index.d.cts"
+      }
+    },
+    "./SideMenu": {
+      "import": {
+        "types": "./dist/lib/widgets/SideMenu/index.d.mts",
+        "default": "./dist/lib/widgets/SideMenu/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/SideMenu/index.d.cts",
+        "default": "./dist/lib/widgets/SideMenu/index.d.cts"
+      }
+    },
+    "./Social": {
+      "import": {
+        "types": "./dist/lib/widgets/Social/index.d.mts",
+        "default": "./dist/lib/widgets/Social/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/Social/index.d.cts",
+        "default": "./dist/lib/widgets/Social/index.d.cts"
+      }
+    },
+    "./ToggleOptions": {
+      "import": {
+        "types": "./dist/lib/widgets/ToggleOptions/index.d.mts",
+        "default": "./dist/lib/widgets/ToggleOptions/index.mjs"
+      },
+      "require": {
+        "types": "./dist/lib/widgets/ToggleOptions/index.d.cts",
+        "default": "./dist/lib/widgets/ToggleOptions/index.d.cts"
+      }
+    }
+  }
+}

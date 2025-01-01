@@ -1,0 +1,31 @@
+{
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "allowJs": true,
+    "importHelpers": true,
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "paths": {
+      "@auth/*": ["src/lib/auth/*"],
+      "@auth": ["src/lib/auth"],
+      "@views/*": ["src/lib/views/*"],
+      "@views": ["src/lib/views"],
+      "@common/*": ["src/lib/common/*"],
+      "@common": ["src/lib/common"],
+      "@button/*": ["src/lib/button/*"],
+      "@button": ["src/lib/button"],
+      "@icons/*": ["src/icons/*"],
+      "@icons": ["src/icons"],
+      "@picture/*": ["src/lib/picture/*"],
+      "@picture": ["src/lib/picture"],
+      "@hooks/*": ["src/hooks/*"],
+      "@hooks": ["src/hooks"]
+    }
+  },
+  "include": ["src"]
+}
