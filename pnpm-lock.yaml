@@ -255,6 +255,21 @@ importers:
         specifier: ^5.5.4
         version: 5.7.2
 
+  packages/react-shop-ukrainian:
+    devDependencies:
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
+      react-shop-types:
+        specifier: ^1.0.0
+        version: link:../types
+      rimraf:
+        specifier: ^5.0.1
+        version: 5.0.10
+      typescript:
+        specifier: ^5.5.4
+        version: 5.7.2
+
   packages/types:
     devDependencies:
       cross-env:
