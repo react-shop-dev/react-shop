@@ -1,0 +1,21 @@
+{
+  "name": "react-shop-types",
+  "version": "1.0.0",
+  "description": "React Shop types definition",
+  "author": "Vasyl Pukii",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc --build",
+    "watch": "tsc --build --watch"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
+  }
+}

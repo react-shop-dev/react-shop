@@ -1,0 +1,171 @@
+import { StringMap } from './common';
+
+export interface TranslationMessages extends StringMap {
+  rs: {
+    action: {
+      [key: string]: StringMap | string;
+      accept: string;
+      add: string;
+      back: string;
+      cancel: string;
+      checkout: string;
+      clear_input_value: string;
+      close: string;
+      confirm: string;
+      continue: string;
+      create: string;
+      decline: string;
+      decrease: string;
+      delete: string;
+      deselect: string;
+      edit: string;
+      increase: string;
+      move_down: string;
+      move_up: string;
+      open: string;
+      refresh: string;
+      remove: string;
+      save: string;
+      search: string;
+      select: string;
+      selectAll: string;
+      sort: string;
+      start: string;
+      switch: string;
+      unselect: string;
+      update: string;
+    };
+    auth: {
+      [key: string]: StringMap | string;
+      account: string;
+      auth_check_error: string;
+      forgot_password: string;
+      login: string;
+      logout: string;
+      profile: string;
+      reset_password: string;
+      sign_in: string;
+      sign_up: string;
+    };
+    boolean: {
+      [key: string]: StringMap | string;
+      yes: string;
+      no: string;
+    };
+    cart: {
+      [key: string]: StringMap | string;
+      add: string;
+      added: string;
+      clear: string;
+      confirm: string;
+      empty: string;
+      inside: string;
+      link: string;
+      open: string;
+      remove: string;
+      title: string;
+    };
+    checkout: {
+      [key: string]: StringMap | string;
+      customer: string;
+      delivery: string;
+      shipping: string;
+      link: string;
+      payment: string;
+      review: string;
+      title: string;
+    };
+    field: {
+      [key: string]: StringMap | string;
+      address: string;
+      cardNumber: string;
+      city: string;
+      company: string;
+      confirm_password: string;
+      country: string;
+      email: string;
+      expirationDate: string;
+      firstName: string;
+      fullName: string;
+      lastName: string;
+      name: string;
+      password: string;
+      province: string;
+      phone: string;
+      postalCode: string;
+      username: string;
+    };
+    message: {
+      [key: string]: StringMap | string;
+      created: string;
+      data_provider_error: string;
+      empty: string;
+      error: string;
+      http_error: string;
+      invalid_form: string;
+      item_doesnt_exist: string;
+      not_found: string;
+      unsaved_changes: string;
+      updated: string;
+    };
+    navigation: {
+      [key: string]: StringMap | string;
+      back: string;
+      drawer: string;
+      no_results_found: string;
+      show: string;
+      next: string;
+      previous: string;
+    };
+    product: {
+      [key: string]: StringMap | string;
+      author: string;
+      category: string;
+      description: string;
+      discount: string;
+      image: string;
+      inStock: string;
+      outStock: string;
+      unavailable: string;
+      items: string;
+      name: string;
+      payment: string;
+      price: string;
+      quantity: string;
+      rating: string;
+      total: string;
+    };
+    sort: {
+      [key: string]: StringMap | string;
+      ASC: string;
+      DESC: string;
+      default: string;
+      hignToLow: string;
+      lowToHigh: string;
+      rating: string;
+      top: string;
+    };
+    validation: {
+      [key: string]: StringMap | string;
+      email: string;
+      maxLength: string;
+      maxValue: string;
+      minLength: string;
+      minValue: string;
+      number: string;
+      oneOf: string;
+      regex: string;
+      required: string;
+      unique: string;
+    };
+    view: {
+      [key: string]: StringMap | string;
+      dark: string;
+      grid: string;
+      light: string;
+      list: string;
+      switch: string;
+      title: string;
+    };
+  };
+}

@@ -1,0 +1,15 @@
+{
+  "include": ["src"],
+  "extends": "../../tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "rootDir": "src",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true
+  }
+}
