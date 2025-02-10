@@ -1,0 +1,56 @@
+{
+  "name": "react-shop-create",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "description": "A CLI utility to bootstrap react shop ecommerce project",
+  "authors": [
+    "Vasyl Pukii",
+    "Andrii Pukii"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-shop-dev/react-shop.git",
+    "directory": "packages/react-shop-create"
+  },
+  "bin": {
+    "react-shop-create": "./bin/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "browser": {
+    "fs": false,
+    "path": false
+  },
+  "scripts": {
+    "build": "rimraf dist && tsup && pnpm run types",
+    "dev": "tsup --watch",
+    "types": "node ../../scripts/declarations.js"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.12.12",
+    "cross-env": "^7.0.3",
+    "rimraf": "^5.0.7",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^12.0.0",
+    "deepmerge": "^4.3.1",
+    "execa": "^9.5.2",
+    "figlet": "^1.8.0",
+    "fs-extra": "^11.3.0",
+    "handlebars": "^4.7.8",
+    "inquirer": "^12.3.2",
+    "ora": "^8.2.0"
+  }
+}
