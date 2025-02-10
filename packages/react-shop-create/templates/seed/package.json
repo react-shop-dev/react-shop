@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ra-data-fakerest": "^5.0.0"
+  }
+}

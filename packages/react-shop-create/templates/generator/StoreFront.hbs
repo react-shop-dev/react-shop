@@ -1,0 +1,29 @@
+'use client';
+ 
+import type { FC, PropsWithChildren } from 'react';  
+import { ShopClient } from 'react-shop';
+{{#if (useMaterial uiLib)}}
+import { MaterialUIProvider } from 'react-shop-mui';
+import { Notification } from 'react-shop-mui/Notification';
+import { Layout } from 'react-shop-mui/Layout';
+import theme from './theme';
+{{/if}}
+{{#if seed}}
+import { dataProvider } from '@/lib/dataProvider';
+{{/if}}
+
+export const StoreFront: FC<PropsWithChildren> = ({ children }) => (
+   <ShopClient
+    {{#if seed}}
+      dataProvider={dataProvider}
+    {{/if}}
+    {{#if (useMaterial uiLib)}}
+      uiProvider={MaterialUIProvider}
+      notification={Notification}
+      layout={Layout}
+      themeProps={theme}
+    {{/if}}
+   >
+    {children}
+   </ShopClient>  
+);

@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+src
+
+tsconfig.declarations.json
+tsup.config.ts
+tsconfig.json
