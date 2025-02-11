@@ -5,8 +5,8 @@ import { GoogleAnalytics } from '../components/Analytics';
 import { MetaTags } from '../components/MetaTags';
 import { Progress, ProgressPropsProps } from '../components/Progress';
 import { useAnalytics } from '../hooks/useAnalytics';
-import { useShopConfig } from './useShopConfig';
 import { DevTools, DevToolsProps } from '../components/DevTools';
+import { getShopConfig } from '@functions/shopConfig';
 
 export interface ShopUIProps<UIProviderProps = any> {
   themeProps?: ThemeContextValue;
@@ -27,7 +27,7 @@ export const ShopUI = (props: ShopUIProps) => {
     children,
   } = props;
 
-  const config = useShopConfig();
+  const { config } = getShopConfig();
   const gtag = config?.gtag;
   useAnalytics(gtag);
 

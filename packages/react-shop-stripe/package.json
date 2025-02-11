@@ -1,6 +1,6 @@
 {
   "name": "react-shop-stripe",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Stripe package for React Shop",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -51,7 +51,7 @@
     "@stripe/react-stripe-js": "^2.7.1",
     "@stripe/stripe-js": "^3.5.0",
     "lodash": "^4.17.21",
-    "react-shop": "1.0.0-beta.1",
+    "react-shop": "^1.0.0-beta.2",
     "server-only": "^0.0.1",
     "stripe": "^15.9.0"
   },

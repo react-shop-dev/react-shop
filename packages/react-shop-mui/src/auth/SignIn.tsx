@@ -1,5 +1,7 @@
 import { SetStateAction, Fragment } from 'react';
 import { required, useTranslate, email, useSignIn, AuthProvidersData } from 'react-shop';
+import Divider from '@mui/material/Divider';
+import Typography from '@mui/material/Typography';
 import { PasswordInput } from '../lib/input/PasswordInput';
 import { TextInput } from '../lib/input/TextInput';
 import { ForgotPasswordLink } from './ForgotPasswordLink';
@@ -19,9 +21,11 @@ export const SignIn = (props: SignInFormProps) => {
   const translate = useTranslate();
   const login = useSignIn(hasPasswordAuth ? 'credentials' : 'nodemailer');
 
+  const hasCredentails = data?.redirectable?.length;
+
   return (
     <Fragment>
-      {data?.redirectable?.length ? (
+      {hasCredentails ? (
         <AuthForm submit={login} buttonText="Sign In">
           <Fragment>
             <TextInput
@@ -47,7 +51,16 @@ export const SignIn = (props: SignInFormProps) => {
           ) : null}
         </AuthForm>
       ) : null}
-      {data?.social?.length ? <SocialAuth providers={data?.social} /> : null}
+      {data?.social?.length ? (
+        <Fragment>
+          {hasCredentails ? (
+            <Divider sx={{ py: 2 }}>
+              <Typography variant="caption">or Sign In with</Typography>
+            </Divider>
+          ) : null}
+          <SocialAuth providers={data?.social} />
+        </Fragment>
+      ) : null}
     </Fragment>
   );
 };

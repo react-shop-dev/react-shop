@@ -2,9 +2,9 @@ import { Fragment } from 'react';
 import { usePathname } from 'next/navigation';
 import { Head } from './Head';
 import { removeDoubleSlashes } from '@lib/removeDoubleSlashes';
-import { useShopConfig } from '../shop';
 import type { OgImage } from 'src/types/config';
 import { isBrowser } from '@functions/isBrowser';
+import { getShopConfig } from '@functions/shopConfig';
 
 /**
  * Seo optimization for dynamic metadata
@@ -24,7 +24,7 @@ export type SeoProps = {
 };
 
 export const Seo = (props: SeoProps) => {
-  const config = useShopConfig();
+  const { config } = getShopConfig();
 
   const { description = config?.description, keywords, openGraph } = props;
 

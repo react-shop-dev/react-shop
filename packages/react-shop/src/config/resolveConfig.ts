@@ -25,7 +25,6 @@ export const resolveConfig = (): ShopConfig => {
     }
     throw Error();
   } catch (e: unknown) {
-    console.warn("Couldn't not find shop.config file", e);
     return defaultConfig;
   }
 };

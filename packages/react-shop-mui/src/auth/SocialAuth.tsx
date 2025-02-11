@@ -1,8 +1,7 @@
-import { BaseSyntheticEvent, useState, Fragment } from 'react';
-import { useSignIn, NextImage, useShopConfig } from 'react-shop';
+import { type BaseSyntheticEvent, useState } from 'react';
+import { useSignIn, NextImage } from 'react-shop';
+import { getShopConfig } from 'react-shop/functions';
 import CircularProgress from '@mui/material/CircularProgress';
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
 import { FlexBox } from '@views/FlexBox';
 import { AuthFeedback } from '../lib/auth/AuthFeedback';
 import type { SxProps } from '@mui/material/styles';
@@ -23,7 +22,7 @@ export interface SocialAuthProps {
 }
 
 export const SocialAuth = ({ providers, sx }: SocialAuthProps) => {
-  const config = useShopConfig();
+  const config = getShopConfig();
   const afterLoginUrl = config?.auth?.afterLoginUrl;
 
   const login = useSignIn();
@@ -43,26 +42,19 @@ export const SocialAuth = ({ providers, sx }: SocialAuthProps) => {
   };
 
   return (
-    <Fragment>
-      <Divider sx={{ py: 2 }}>
-        <Typography variant="caption">or Sign In with</Typography>
-      </Divider>
-      <FlexBox flexDirection="column" gap={1} sx={sx}>
-        {providers.map(provider => (
-          <SocialButton
-            key={provider.id}
-            id={provider.id}
-            disabled={!!loading}
-            className={`social-${provider.name}`}
-            label={provider.name}
-            onClick={event => handleSocial(event, provider.id)}
-            endIcon={
-              loading === provider.id ? <CircularProgress color="inherit" size={20} /> : null
-            }
-          />
-        ))}
-        <AuthFeedback message={authError?.message} />
-      </FlexBox>
-    </Fragment>
+    <FlexBox flexDirection="column" gap={1} sx={sx}>
+      {providers.map(provider => (
+        <SocialButton
+          key={provider.id}
+          id={provider.id}
+          disabled={!!loading}
+          className={`social-${provider.name}`}
+          label={provider.name}
+          onClick={event => handleSocial(event, provider.id)}
+          endIcon={loading === provider.id ? <CircularProgress color="inherit" size={20} /> : null}
+        />
+      ))}
+      <AuthFeedback message={authError?.message} />
+    </FlexBox>
   );
 };

@@ -8,17 +8,18 @@ import { DataProviderContext } from '@data/DataProviderContext';
 import { NotificationContextProvider } from '../notification/NotificationProvider';
 import { CartProvider, CartAdapterComponent } from '../cart/CartProvider';
 import { getQueryClient } from './getQueryClient';
+import { defaultDataProvider } from '@functions/defaultDataProvider';
 import type { DataProvider } from '@type/data';
 
 export interface ShopContextProps {
   queryClient?: QueryClient;
-  dataProvider: DataProvider;
+  dataProvider?: DataProvider;
   cartAdapter?: CartAdapterComponent;
   children: ReactNode;
 }
 
 export const ShopContext = (props: ShopContextProps) => {
-  const { dataProvider, queryClient, cartAdapter, children } = props;
+  const { dataProvider = defaultDataProvider, queryClient, cartAdapter, children } = props;
 
   const { config, translate } = getShopConfig();
 

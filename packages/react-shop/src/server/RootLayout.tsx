@@ -12,7 +12,9 @@ export const RootLayout = ({ locale, className, meta, dir, children }: RootLayou
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
       <head>{meta}</head>
-      <body className={className}>{children}</body>
+      <body className={className} style={{ margin: 0, padding: 0 }}>
+        {children}
+      </body>
     </html>
   );
 };
