@@ -45,11 +45,7 @@ export const TopBar = (props: TopBarProps) => {
                   <ExpandIcon expand={expand} clickHandler={toggleExpand} />
                 </Fragment>
               ) : null}
-              <FlexBox
-                alignItems="center"
-                gap={3}
-                sx={{ ml: navbar ? 0 : 'auto', '&:empty': { display: 'none' } }}
-              >
+              <FlexBox alignItems="center" gap={3} sx={{ ml: navbar ? 0 : 'auto' }}>
                 {availableLocales.length > 0 ? <LocalesButton /> : null}
                 <Social />
                 {theme?.colorSchemes?.dark ? <ToggleThemeButton /> : null}

@@ -3,12 +3,12 @@
     "default": "React Shop",
     "template": "React Shop | %s"
   },
-  "description": "E-commerce project",
+  "description": "Ecommerce store",
   "openGraph": {
     "type": "website",
     "title": "React Shop",
     "siteName": "React Shop",
-    "description": "E-commerce project",
+    "description": "Ecommerce store",
     "url": "",
     "images": []
   },

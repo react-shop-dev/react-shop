@@ -3,9 +3,9 @@
 ## Usage
 
 ```sh
-npx react-shop-create <app-name>
+npx react-shop-create@latest <app-name>
 #or
-npx react-shop-create <app-name> [options]
+npx react-shop-create@latest <app-name> [options]
 ```
 
 If no options was entered - you'll be asked to enter a description (optional), setup authentication, fake data and choose linter + UI library.

@@ -1,13 +1,13 @@
 import { usePathname } from 'next/navigation';
 import { parseSlugifiedUrl } from '@functions/slugify';
-import { useShopConfig } from '../shop';
 import { getCountryCodes } from '@functions/getCountryCodes';
+import { getShopConfig } from '@functions/shopConfig';
 
 export type UsePathnamesResult = Array<{ last: boolean; to: string; key?: string }>;
 
 export const usePathnames = (skipLastPath?: boolean): UsePathnamesResult => {
   const pathname = usePathname();
-  const config = useShopConfig();
+  const { config } = getShopConfig();
   const countryCodes = config?.regions?.map(getCountryCodes).flat();
 
   const pathnames = (pathname || '')

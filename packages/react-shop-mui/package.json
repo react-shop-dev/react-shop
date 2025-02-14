@@ -1,6 +1,6 @@
 {
   "name": "react-shop-mui",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.3",
   "description": "MUI components for e-commerce templates",
   "sideEffects": false,
   "main": "dist/index.cjs",
@@ -45,7 +45,7 @@
     "react-is": "^19.0.0"
   },
   "devDependencies": {
-    "@mui/base": "5.0.0-beta.40",
+    "@mui/base": "5.0.0-beta.69",
     "@mui/icons-material": "^6.1.0",
     "@mui/material": "^6.1.0",
     "@mui/system": "^6.1.0",
@@ -71,7 +71,7 @@
     "next": "^14.1.1 || ^15.0.0",
     "react": "^18.2.0 || ^19.0.0",
     "react-dom": "^18.2.0 || ^19.0.0",
-    "react-shop": "1.0.0-beta.1"
+    "react-shop": "^1.0.0-beta.2"
   },
   "exports": {
     ".": {

@@ -1,1 +1,1 @@
-Auth package for react shop
+# Auth package for react shop, built on top next-auth library

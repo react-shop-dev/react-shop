@@ -2,9 +2,9 @@ import isObject from 'lodash/isObject';
 import isEmpty from 'lodash/isEmpty';
 import isString from 'lodash/isString';
 import { Head } from './Head';
-import { useShopConfig } from '../shop/useShopConfig';
 import { useTranslate } from '../i18n';
 import { parseSlugifiedUrl } from '@functions/slugify';
+import { getShopConfig } from '@functions/shopConfig';
 
 type TitleProps = {
   title: string | { absolute: string };
@@ -14,7 +14,7 @@ type TitleProps = {
 export const Title = (props: TitleProps) => {
   const { title: titleProp, social = true } = props;
 
-  const config = useShopConfig();
+  const { config } = getShopConfig();
   const translate = useTranslate();
 
   let title = titleProp;

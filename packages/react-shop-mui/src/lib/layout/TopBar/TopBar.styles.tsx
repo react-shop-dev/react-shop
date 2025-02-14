@@ -21,7 +21,6 @@ export const StyledTopBar: StyledComponent<BoxProps & { expand?: boolean }> = st
 }>(({ theme, expand }) => ({
   backgroundColor: theme.palette.secondary.light,
   color: theme.palette.getContrastText(theme.palette.background.default),
-  padding: `${theme.spacing(0.5)} 0px`,
   ...theme.applyStyles(COLOR_SCHEME_DARK, {
     color: 'white',
     backgroundColor: '#000',
@@ -35,6 +34,13 @@ export const StyledTopBar: StyledComponent<BoxProps & { expand?: boolean }> = st
   },
   [`& .${TopBarClasses.container}`]: {
     flexWrap: 'wrap',
+    padding: `${theme.spacing(0.5)} 0px`,
+    ['&:has(:empty)']: {
+      display: 'none',
+    },
+    ['&:has(:not(:empty))']: {
+      display: 'flex',
+    },
   },
   [theme.breakpoints.down('md')]: {
     [`& .${TopBarClasses.container}`]: {

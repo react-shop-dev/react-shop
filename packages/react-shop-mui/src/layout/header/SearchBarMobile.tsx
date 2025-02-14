@@ -3,7 +3,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
-import { ClickAwayListener } from '@mui/base/ClickAwayListener';
+import ClickAwayListener from '@mui/material/ClickAwayListener';
 import SearchIcon from '@mui/icons-material/Search';
 import styled from '@mui/material/styles/styled';
 import type { SvgIconProps } from '@mui/material/SvgIcon';

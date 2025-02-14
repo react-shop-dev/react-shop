@@ -11,6 +11,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "react-shop-types": "^1.0.0"
+    "react-shop-types": "^1"
   }
 }

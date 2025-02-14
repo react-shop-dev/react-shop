@@ -3,7 +3,7 @@ import { HTMLAttributes, useState } from 'react';
 import type { Product } from 'react-shop-types';
 import { useAutocomplete, useNavigationEvent, useProductInterface } from 'react-shop';
 import get from 'lodash/get';
-import { FilterOptionsState } from '@mui/base/useAutocomplete';
+import type { FilterOptionsState } from '@mui/base/useAutocomplete';
 import type { SxProps } from '@mui/material/styles';
 import { AutocompleteInput, AutocompleteInputProps } from '../../lib/input/AutocompleteInput';
 import { FlexRowCenter } from '@views/FlexRowCenter';
