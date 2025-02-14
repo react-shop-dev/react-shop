@@ -1,0 +1,32 @@
+{
+  "session": [{ "id": 0 }],
+  "regions": [
+    {
+      "id": "reg_us",
+      "name": "us",
+      "currency_code": "usd",
+      "payment_providers": [],
+      "tax_rate": 0,
+      "tax_rates": [],
+      "fulfillment_providers": [],
+      "countries": [
+        {
+          "id": "us",
+          "iso_2": "us",
+          "iso_3": "usa",
+          "name": "united states",
+          "display_name": "United States",
+          "region_id": "reg_us"
+        },
+        {
+          "id": "ca",
+          "iso_2": "ca",
+          "iso_3": "can",
+          "name": "canada",
+          "display_name": "Canada",
+          "region_id": "reg_us"
+        }
+      ]
+    }
+  ]
+}

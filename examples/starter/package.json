@@ -1,0 +1,36 @@
+{
+  "name": "starter",
+  "version": "0.1.0",
+  "description": "Ecommerce store",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "private": true,
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-shop": "^1.0.0-beta.2",
+    "next": "15.1.6",
+    "next-auth": "5.0.0-beta.25",
+    "react-shop-auth": "^1.0.0-beta.2",
+    "ra-data-fakerest": "^5.0.0",
+    "@mui/material": "^6.1.0",
+    "react-shop-mui": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "react-shop-types": "^1",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "@eslint/eslintrc": "^3",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.2"
+  }
+}
