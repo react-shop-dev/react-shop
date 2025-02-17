@@ -1,5 +1,5 @@
 export default function Home() {
-  return process.env.NODE_ENV !== 'production' ? (
+  return (
     <div className="flex w-screen min-h-screen font-sans">
       <div className="flex flex-1 flex-col items-center justify-center text-center">
         <svg
@@ -35,5 +35,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  ) : null;
+  );
 }

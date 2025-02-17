@@ -35,9 +35,10 @@ export const installDeps = async (settings: CliOptions, appDirName: string): Pro
   const file = merge.all([
     {
       name: appDirName,
+      version: '0.1.0',
       description: settings.description,
       scripts: {
-        dev: 'next dev',
+        dev: 'next dev --experimental-https',
         build: 'next build',
         start: 'next start',
         ...setLinterScript(settings.linter),

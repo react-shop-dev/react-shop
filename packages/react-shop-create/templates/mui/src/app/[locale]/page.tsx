@@ -3,15 +3,7 @@ import Typography from '@mui/material/Typography';
 
 export default function Home() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        placeContent: 'center',
-        flex: 1,
-        bgcolor: 'grey.100',
-        alignItems: 'center',
-      }}
-    >
+    <Box sx={{ margin: 'auto' }}>
       <Typography component="h1" variant="h5">
         Home page
       </Typography>

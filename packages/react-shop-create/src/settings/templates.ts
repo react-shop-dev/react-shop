@@ -9,6 +9,8 @@ export const copyTemplates = (settings: CliOptions): void => {
 
   copyTemplateFiles(TEMPLATES.starter);
 
+  generateGitIgnore();
+
   if (settings.linter === 'eslint') {
     copyTemplateFiles(TEMPLATES.eslint);
   }
@@ -48,4 +50,14 @@ const copyTemplateFiles = (directory: string, excludes = ['package.json']) => {
       return true;
     },
   });
+};
+
+const generateGitIgnore = () => {
+  const targetDir = process.env.TARGET_DIR!;
+
+  const gitignorePath = path.join(targetDir, 'gitignore');
+
+  if (gitignorePath) {
+    fs.renameSync(gitignorePath, path.join(targetDir, '.gitignore'));
+  }
 };
