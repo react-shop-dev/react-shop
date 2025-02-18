@@ -4,13 +4,13 @@
 </div>
 
 <p align="center">
-   <a href="https://github.com/react-shop-dev/react-shop#licence">
+  <a style="display: inline-block" href="https://github.com/react-shop-dev/react-shop/blob/main/LICENSE.md">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license." />
   </a>
-  <a href="https://github.com/react-shop-dev/react-shop#contributing">
+  <a style="display: inline-block" href="https://github.com/react-shop-dev/react-shop/blob/main/.github/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
   </a>
-  <a href="https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md">
+  <a style="display: inline-block" href="https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md">
     <img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg" alt="StandWithUkraine" />
   </a>
 <p>
