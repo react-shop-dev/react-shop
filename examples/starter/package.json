@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "description": "Ecommerce store",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "next lint"
   },
   "private": true,
   "dependencies": {

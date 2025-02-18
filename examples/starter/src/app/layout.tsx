@@ -3,6 +3,8 @@ import type { Viewport } from 'next';
 import { Roboto } from 'next/font/google';
 import { NextAuthProvider } from 'react-shop-auth';
 import { auth } from '@/auth.config';
+import { fetchList } from '@/modules/store/actions';
+import type { Region } from 'react-shop-types';
 import { StoreFront } from '@/modules/store/StoreFront';
 
 const roboto = Roboto({
@@ -27,8 +29,14 @@ export default async function RootLayout({
 }>) {
   const authSession = await auth();
 
+  const { data: regions } = await fetchList<Region>('regions');
+
   return (
-    <Shop className={roboto.className}>
+    <Shop
+      className={roboto.className}
+      regions={regions}
+      meta={<meta name="emotion-insertion-point" content="" />}
+    >
       <NextAuthProvider session={authSession}>
         <StoreFront>{children}</StoreFront>
       </NextAuthProvider>
