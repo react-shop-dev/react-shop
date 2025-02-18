@@ -1,16 +1,16 @@
 <div align="center">
-  <img src="https://github.com/react-shop-dev/react-shop/blob/readme-file/.github/logo.png?raw=true" alt="logo" width="112">
+  <img src="https://github.com/react-shop-dev/react-shop/blob/main/.github/logo.png?raw=true" alt="logo" width="112">
   <h1>react shop</h1>
 </div>
 
 <p align="center">
-  <a style="display: inline-block" href="https://github.com/react-shop-dev/react-shop/blob/main/LICENSE.md">
+  <a style="display: inline-block;" href="https://github.com/react-shop-dev/react-shop/blob/main/LICENSE.md">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license." />
   </a>
-  <a style="display: inline-block" href="https://github.com/react-shop-dev/react-shop/blob/main/.github/CONTRIBUTING.md">
+  <a style="display: inline-block;" href="https://github.com/react-shop-dev/react-shop/blob/main/.github/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
   </a>
-  <a style="display: inline-block" href="https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md">
+  <a style="display: inline-block;" href="https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md">
     <img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg" alt="StandWithUkraine" />
   </a>
 <p>
