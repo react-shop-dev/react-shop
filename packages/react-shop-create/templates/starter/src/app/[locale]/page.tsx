@@ -1,5 +1,5 @@
 export default function Home() {
-  return process.env.NODE_ENV !== 'production' ? (
+  return (
     <div style={styles.root}>
       <div style={styles.main}>
         <svg
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-  ) : null;
+  );
 }
 
 const styles = {

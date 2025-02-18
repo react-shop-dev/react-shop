@@ -28,6 +28,7 @@ export const complileFiles = (config: CliOptions) => {
     useStoreFront,
     auth,
     uiLib,
+    seed,
   });
 
   if (useStoreFront) {

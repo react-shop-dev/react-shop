@@ -8,6 +8,7 @@ import {
   createConfigFile,
   complileFiles,
   installDeps,
+  format,
 } from './settings';
 import { handleConsoleError, sanitizeAppName } from './utils';
 import type { CliOptions } from './types';
@@ -47,6 +48,8 @@ async function action(appName: string, options: CliOptions) {
     complileFiles(settings);
 
     await installDeps(settings, appDirName);
+
+    await format(settings.linter);
   } catch (error: unknown) {
     handleConsoleError(error);
   }
