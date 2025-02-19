@@ -1,0 +1,6 @@
+{
+  "node": "18",
+  "buildCommand": "bootstrap",
+  "packages": ["packages/react-shop", "packages/react-shop-mui", "packages/react-shop-auth"],
+  "sandboxes": ["/examples/starter"]
+}

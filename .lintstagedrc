@@ -1,4 +1,4 @@
 {
-  ".{js,jsx,ts,tsx}": ["eslint --quiet --fix --cache packages", "git add"],
+  "*.{js,jsx,ts,tsx}": ["eslint --quiet --fix", "git add"],
   "*.{json,md}": ["prettier", "git add"]
 }
