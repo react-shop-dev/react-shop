@@ -145,7 +145,7 @@ function SearchInput() {
 ```jsx title="src/store.js"
 import { atomWithStorage } from 'react-shop';
 
-export const themeAtom = atomWithStorage('theme', []); // where 'theme' is local storage key
+export const themeAtom = atomWithStorage('theme', 'light'); // where 'theme' is a local storage key
 
 ```
 
@@ -153,11 +153,11 @@ export const themeAtom = atomWithStorage('theme', []); // where 'theme' is local
 
 Our atomic store simplifies state management for common e-commerce scenarios. Here ready-to-use atoms using by react shop components, which you can use too:
 
-- **cartOpenState**: Manages cart dialog visibility. Type: ``Boolean``
-- **drawerState**: Manages the sidebar’s open/closed state. Type: ``Boolean``
-- **authPopupState**: Controls visibility and state of login/sign-up modals. Type: ``Boolean``
-- **viewModeState**: Persists product display preferences across sessions. Type: ``'grid' | 'list'``
-- **listParamsState**: Persists pagination, sorting and filtering  settings for product pages. Type: ``Object``
+- **``cartOpenState``**: Manages cart dialog visibility. Type: ``Boolean``
+- **``drawerState``**: Manages the sidebar’s open/closed state. Type: ``Boolean``
+- **``authPopupState``**: Controls visibility and state of login/sign-up modals. Type: ``Boolean``
+- **``viewModeState``**: Persists product display preferences across sessions. Type: ``'grid' | 'list'``
+- **``listParamsState``**: Persists pagination, sorting and filtering  settings for products list pages. Type: ``Object``
 
 ```jsx title="Example""
 'use client';
