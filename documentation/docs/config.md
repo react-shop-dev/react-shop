@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Configuration
 
 React shop allows developers to customize their application using a ```shop.config.js``` file located at the root of the project. This file follows the ``CommonJS`` module format and is executed in a Next.js server runtimes.

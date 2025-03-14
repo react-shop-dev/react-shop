@@ -1,0 +1,62 @@
+---
+sidebar_position: 2
+---
+
+# Installation
+
+```mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+```
+
+### What you'll need
+
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above. Can be checked by running `node -v`.
+- Windows, macOS, and Linux are supported.
+- Next.js version 14 or later with the App Router setup is required, if you prefer manual installation.
+
+## Generate a new site
+
+**React shop** consists of a set of npm packages.
+The simplest way to get started is by using [**`react-shop-create`**](https://www.npmjs.com/package/react-shop-create) CLI utility, which sets up project automatically for you. You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor, it will create a new directory containing the scaffolded files.
+
+```bash
+npx react-shop-create@latest my-website
+```
+
+When running this command you'll be asked to choose some basic application settings. After that, the CLI will create a folder with your project name and install the required dependencies.
+CLI uses a Next.js [project structure](https://nextjs.org/docs/app/getting-started/project-structure) as a basis. <br />
+
+Run `npx npx react-shop-creat@latest --help` for more information about all available flags.
+
+:::tip
+We recommend to choose `MUI` as UI library, so that you can get started quickly with **react-shop-mui** components and features.
+:::
+
+## Start your site
+
+Run the development server:
+
+```bash npm2yarn
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at https://localhost:3000/.
+
+:::note
+For certain use cases like testing on dev environment payment integration or authentication, react-shop uses `--experimental-https` flag on `dev` script, which generates a self-signed certificate.
+:::
+
+## Build
+
+Generate an optimized version of your application for production, and preview your production site on Node.js server.
+
+```bash npm2yarn
+npm run build
+npm run start
+```
+
+Check also [build](https://nextjs.org/docs/app/building-your-application) section on Next.js official docs.
