@@ -26,7 +26,6 @@ module.exports = {
       url: 'https://facebook.com',
     },
   ],
-  gtag: process.env.NEXT_PUBLIC_GA_ID,
 };  
 ```
 
