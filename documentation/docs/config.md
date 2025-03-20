@@ -69,3 +69,13 @@ function SocialWidget() {
   ) 
 }
 ```
+
+### Build and Deploy
+
+To include ``shop.config`` file as dependency for deploying a production version you must leverage ``outputFileTracingIncludes`` option in **next.config.js** file.
+
+```js title="next.config.js"
+outputFileTracingIncludes: {
+  '/': ['shop.config.js'],
+},
+```
